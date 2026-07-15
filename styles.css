@@ -446,10 +446,15 @@ h3 {
   height: 20rem;
   overflow: hidden;
   border-radius: 0.5rem;
-  background:
-    linear-gradient(36deg, transparent 48%, rgba(18, 200, 236, 0.55) 49%, rgba(18, 200, 236, 0.55) 50%, transparent 51%),
-    linear-gradient(145deg, transparent 48%, rgba(18, 200, 236, 0.45) 49%, rgba(18, 200, 236, 0.45) 50%, transparent 51%),
-    linear-gradient(135deg, #568c53, #a4d98f 26%, #6db7d0 27%, #9fcf8f 38%, #d7e0c4 39%, #76b36e 66%, #8fc585);
+  background: #0d1517;
+  border: 1px solid var(--line);
+}
+
+.map-preview img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .cone {
