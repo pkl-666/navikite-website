@@ -73,6 +73,36 @@ a {
   font-weight: 750;
 }
 
+.simple-hero {
+  min-height: auto;
+  grid-template-columns: 1fr;
+  padding: 4.8rem 0 1.4rem;
+  text-align: center;
+}
+
+.simple-hero .hero-copy {
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+.simple-hero .hero-logo {
+  margin-inline: auto;
+}
+
+.simple-hero h1 {
+  max-width: 12ch;
+  margin-inline: auto;
+}
+
+.simple-hero .lead {
+  max-width: 44rem;
+  margin-inline: auto;
+}
+
+.simple-hero .hero-actions {
+  justify-content: center;
+}
+
 .nav-links a,
 .nav-button,
 .primary-action,
@@ -139,6 +169,42 @@ footer {
   align-items: center;
   gap: 3rem;
   padding: 4rem 0 3rem;
+}
+
+.simple-hero {
+  min-height: auto;
+  grid-template-columns: 1fr;
+  padding: 4.8rem 0 1.4rem;
+  text-align: center;
+}
+
+.preview-section {
+  width: min(48rem, calc(100% - 2rem));
+  margin: 0 auto 3.5rem;
+}
+
+.phone-preview {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 706 / 1400;
+  max-height: min(78rem, calc(100vh + 16rem));
+  margin-inline: auto;
+  border-radius: 2.6rem;
+  background:
+    linear-gradient(180deg, rgba(18, 200, 236, 0.10), transparent 34%),
+    #030507;
+  box-shadow:
+    0 2.2rem 5rem rgba(0, 0, 0, 0.48),
+    0 0 0 1px rgba(255, 255, 255, 0.10);
+}
+
+.phone-preview img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  filter: saturate(1.06) contrast(1.05);
 }
 
 .hero-logo {
@@ -359,6 +425,10 @@ h3 {
 
 .section {
   padding: 5rem 0;
+}
+
+.cta {
+  margin-top: 1rem;
 }
 
 .two-column {

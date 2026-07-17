@@ -6,12 +6,12 @@
     <title>NaviKite</title>
     <meta
       name="description"
-      content="NaviKite is an audio-first snowkite navigation app for routes, waypoints, Apple Watch, wind planning and whiteout situations."
+      content="NaviKite er en navigasjonsapp under utvikling, laget av og for snøkitere."
     />
     <meta property="og:title" content="NaviKite" />
     <meta
       property="og:description"
-      content="Audio-first navigation for snowkiting, trips and whiteout situations."
+      content="Navigasjon laget av og for snøkitere. Beta under utvikling i 2026."
     />
     <meta property="og:image" content="assets/navikite-icon.png" />
     <link rel="icon" href="assets/navikite-icon.png" />
@@ -24,196 +24,56 @@
         <img src="assets/navikite-icon.png" alt="" />
         <span>NaviKite</span>
       </a>
-      <nav class="nav-links">
-        <a href="#concept" data-i18n="navConcept">Konsept</a>
-        <a href="#plan">Plan</a>
-        <a href="#watch" data-i18n="navWatch">Klokke</a>
-        <a href="#faq">FAQ</a>
-      </nav>
       <div class="header-actions">
         <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to English">
           <span data-language-flag>🇬🇧</span>
           <span data-language-label>English</span>
         </button>
-        <a class="nav-button" href="mailto:feedback@navikite.com?subject=NaviKite%20feedback" data-i18n="feedback">Feedback</a>
+        <a class="nav-button" href="mailto:feedback@navikite.com?subject=NaviKite%20beta" data-i18n="betaButton">Beta</a>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero simple-hero">
         <div class="hero-copy">
           <img class="hero-logo" src="assets/navikite-logo.jpeg" alt="NaviKite logo" />
-          <p class="eyebrow" data-i18n="heroEyebrow">Audio-first navigasjon for snøkiting</p>
-          <h1 data-i18n="heroTitle">NaviKite holder kursen i øret, på telefonen og på klokka.</h1>
+          <p class="eyebrow" data-i18n="heroEyebrow">Kommer i 2026</p>
+          <h1 data-i18n="heroTitle">Navigasjon laget av og for snøkitere.</h1>
           <p class="lead" data-i18n="heroLead">
-            Laget for kitere som trenger retning, avstand og ruteoppdateringer uten å stoppe,
-            ta av votter og grave frem telefonen.
+            NaviKite er under aktiv beta-testing: retning, avstand og enkle
+            oppdateringer når telefonen ligger pakket bort og fjellet krever fokus.
           </p>
           <div class="hero-actions">
-            <a class="primary-action" href="assets/NaviKite_brukerveiledning_FAQ.pdf" data-i18n="downloadGuide">Last ned guide</a>
-            <a class="secondary-action" href="#concept" data-i18n="seeWhatItDoes">Se hva den gjør</a>
-          </div>
-        </div>
-        <div class="instrument" aria-label="NaviKite navigation illustration">
-          <div class="instrument-top">
-            <span>Krækkja</span>
-            <strong>12.7 km</strong>
-          </div>
-          <div class="compass">
-            <span class="cardinal north">N</span>
-            <span class="cardinal east">E</span>
-            <span class="cardinal south">S</span>
-            <span class="cardinal west">W</span>
-            <div class="travel">TRAVEL</div>
-            <div class="dest-arrow"></div>
-          </div>
-          <div class="readout" data-i18n="heroReadout">25 HØYRE · 12.7 KILOMETER</div>
-        </div>
-      </section>
-
-      <section class="quick-strip" aria-label="Key functions">
-        <div><strong data-i18n="stripVoiceTitle">Stemme</strong><span data-i18n="stripVoiceText">Kurs- og avstandsoppdateringer</span></div>
-        <div><strong data-i18n="stripRoutesTitle">Ruter</strong><span data-i18n="stripRoutesText">GPX, veipunkter og base</span></div>
-        <div><strong>Plan</strong><span data-i18n="stripPlanText">Vind, varsel og webkamera</span></div>
-        <div><strong data-i18n="stripWatchTitle">Klokke</strong><span data-i18n="stripWatchText">Rask visuell guiding</span></div>
-      </section>
-
-      <section id="concept" class="section two-column">
-        <div>
-          <p class="eyebrow" data-i18n="conceptEyebrow">Konsept</p>
-          <h2 data-i18n="conceptTitle">En enkel idé for ekte turer på vidda.</h2>
-        </div>
-        <div class="text-flow">
-          <p data-i18n="conceptP1">
-            NaviKite was born from trips on Hardangervidda where the normal navigation tools felt
-            awkward for snowkiting. The idea is simple: a voice in your ear gives you useful updates
-            while you keep moving.
-          </p>
-          <p data-i18n="conceptP2">
-            The app points in a straight line toward your destination, route waypoint or base. It
-            does not know whether there is open water, a steep mountain or bad terrain between you
-            and the goal. Map judgement, local knowledge and sound mountain sense still matter.
-          </p>
-          <p data-i18n="conceptP3">
-            NaviKite works in English and Norwegian. For Siri commands, use the same language in
-            Siri and the app. You can also choose the Siri voice you prefer in iPhone Settings.
-          </p>
-        </div>
-      </section>
-
-      <section class="section">
-        <p class="eyebrow" data-i18n="coreEyebrow">Hovedfunksjoner</p>
-        <h2 data-i18n="coreTitle">Laget for fart, stopp og dårlig sikt.</h2>
-        <div class="feature-grid">
-          <article>
-            <span class="icon">↗</span>
-            <h3 data-i18n="navFeatureTitle">Navigasjon</h3>
-            <p data-i18n="navFeatureText">Velg destinasjon, lagre et sted, returner til base eller følg en GPX-rute veipunkt for veipunkt.</p>
-          </article>
-          <article>
-            <span class="icon">◉</span>
-            <h3 data-i18n="movementTitle">Movement mode</h3>
-            <p data-i18n="movementText">Når GPS-kursen er stabil, fokuserer NaviKite på høyre/venstre-guiding relativt til fartsretningen.</p>
-          </article>
-          <article>
-            <span class="icon">✳</span>
-            <h3>Whiteout</h3>
-            <p data-i18n="whiteoutText">En forenklet visning hjelper deg å holde retning når visuelle referanser forsvinner.</p>
-          </article>
-          <article>
-            <span class="icon">⌁</span>
-            <h3 data-i18n="loggingTitle">Logging</h3>
-            <p data-i18n="loggingText">Turlogger kan summere distanse, tid, fart og høydemeter for enkeltturer, sesonger og total bruk.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="plan" class="section plan-band">
-        <div>
-          <p class="eyebrow" data-i18n="planningEyebrow">Planlegging</p>
-          <h2 data-i18n="planningTitle">Vind, veistatus, webkamera og TurTips.</h2>
-          <p data-i18n="planningText">
-            PLAN brings together live wind readings, Yr forecast, mountain-road status, webcam
-            stills and a sidewind-based Trip Tips tool.
-          </p>
-        </div>
-        <div class="plan-panel">
-          <div class="panel-tabs">
-            <span data-i18n="currentWinds">Vindmålere</span>
-            <span data-i18n="forecast">Varsel</span>
-            <span class="active">TurTips</span>
-          </div>
-          <div class="map-preview">
-            <img
-              src="assets/turtips-map.png"
-              alt="TurTips map showing sidewind sectors and destination suggestions"
-            />
+            <a class="primary-action" href="mailto:feedback@navikite.com?subject=NaviKite%20beta" data-i18n="tryBeta">Prøv beta</a>
           </div>
         </div>
       </section>
 
-      <section id="watch" class="section two-column">
-        <div>
-          <p class="eyebrow">Apple Watch</p>
-          <h2 data-i18n="watchTitle">Et raskt blikk når telefonen ligger pakket bort.</h2>
-        </div>
-        <div class="text-flow">
-          <p data-i18n="watchP1">
-            The watch companion shows course, distance and navigation state. It is especially useful
-            when the iPhone is in an armband or pocket and you only need a quick glance.
-          </p>
-          <p data-i18n="watchP2">
-            The phone remains the main navigation unit, while the watch mirrors key guidance and can
-            keep important context visible during a session.
-          </p>
+      <section class="preview-section" aria-label="NaviKite preview">
+        <div class="phone-preview">
+          <img
+            src="assets/home-map-preview.png"
+            alt="NaviKite kart- og kompassvisning"
+          />
         </div>
       </section>
 
-      <section class="section safety">
-        <p class="eyebrow" data-i18n="safetyEyebrow">Sikkerhet</p>
-        <h2 data-i18n="safetyTitle">Nyttig, men ikke en erstatning for vurderingsevne.</h2>
-        <p data-i18n="safetyText">
-          NaviKite is a navigation aid, not a guarantee of a safe route. Bring map, compass, backup
-          power, weather judgement and the usual mountain safety habits.
+      <section id="beta" class="section cta">
+        <p class="eyebrow" data-i18n="betaEyebrow">Beta</p>
+        <h2 data-i18n="betaTitle">Interessert i å prøve beta-versjonen?</h2>
+        <p data-i18n="betaText">
+          Send en kort e-post med hvem du er, hvor du kiter, og hvilken iPhone /
+          Apple Watch du bruker.
         </p>
-      </section>
-
-      <section id="faq" class="section">
-        <p class="eyebrow">FAQ</p>
-        <h2 data-i18n="faqTitle">Vanlige beta-spørsmål.</h2>
-        <div class="faq-list">
-          <details open>
-            <summary data-i18n="faqMapQ">Har NaviKite innebygde kart?</summary>
-            <p data-i18n="faqMapA">Nei. Den gir luftlinje-retning og planleggingsstøtte. Bruk en skikkelig kartapp eller papirkart for terrengvurderinger.</p>
-          </details>
-          <details>
-            <summary data-i18n="faqGpxQ">Kan jeg importere GPX fra TopoGPS?</summary>
-            <p data-i18n="faqGpxA">Ja. Du kan dele enkeltpunkter eller ruter til NaviKite, og deretter lagre eller navigere til dem.</p>
-          </details>
-          <details>
-            <summary data-i18n="faqSiriQ">Fungerer Siri på norsk og engelsk?</summary>
-            <p data-i18n="faqSiriA">Ja, men sett Siri til samme språk som NaviKite for best forståelse av kommandoer og readback.</p>
-          </details>
-          <details>
-            <summary data-i18n="faqFeedbackQ">Hvordan gir jeg feedback?</summary>
-            <p data-i18n="faqFeedbackA">Send konkrete observasjoner: hvor du var, hva du forventet, hva NaviKite sa eller viste, og hva som bør endres.</p>
-          </details>
-        </div>
-      </section>
-
-      <section class="section cta">
-        <h2 data-i18n="ctaTitle">Tester du NaviKite?</h2>
-        <p data-i18n="ctaText">Last ned gjeldende guide eller send felterfaringer direkte.</p>
         <div class="hero-actions">
-          <a class="primary-action" href="assets/NaviKite_brukerveiledning_FAQ.pdf" data-i18n="downloadPdf">Last ned PDF-guide</a>
-          <a class="secondary-action" href="mailto:feedback@navikite.com?subject=NaviKite%20feedback" data-i18n="sendFeedback">Send feedback</a>
+          <a class="primary-action" href="mailto:feedback@navikite.com?subject=NaviKite%20beta" data-i18n="emailBeta">Send e-post</a>
         </div>
       </section>
     </main>
 
     <footer>
       <span>NaviKite</span>
-      <span data-i18n="footerText">Beta-konsept av PK Lunderød</span>
+      <span data-i18n="footerText">Beta-konsept av PK Lunderød · 2026</span>
     </footer>
   </body>
 </html>
