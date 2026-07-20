@@ -37,6 +37,33 @@ const translations = {
       "Send en kort e-post med hvem du er, hvor du kiter, og hvilken iPhone / Apple Watch du bruker.",
     emailBeta: "Send e-post",
     footerText: "Beta-konsept av PK Lunderød · 2026",
+    privacyLink: "Personvern",
+    privacyEyebrow: "Personvern",
+    privacyTitle: "Privacy Policy",
+    privacyUpdated: "Sist oppdatert: 20. juli 2026",
+    privacyIntroTitle: "Oversikt",
+    privacyIntroText:
+      "NaviKite er laget for å gi navigasjonsstøtte for snøkiting og ferdsel i fjellet. Appen bruker posisjon, bevegelse og ruteinformasjon for å vise retning, avstand, kart, turlogger og stemmeveiledning. NaviKite selger ikke persondata.",
+    privacyDataTitle: "Informasjon appen kan bruke",
+    privacyDataText:
+      "NaviKite kan bruke enhetens posisjon, kompassretning, fart, høyde, lagrede destinasjoner, ruter, waypoints, baseposisjon, turlogger og appinnstillinger. Informasjonen brukes for at navigasjonsfunksjonene skal virke.",
+    privacyStorageTitle: "Lokal lagring",
+    privacyStorageText:
+      "Lagrede posisjoner, ruter, nedlastede kartfliser, innstillinger og turlogger lagres lokalt på enheten med mindre du selv velger å eksportere eller dele dem. Turlogger kan eksporteres som GPX-filer.",
+    privacyServicesTitle: "Eksterne tjenester",
+    privacyServicesText:
+      "Når online-funksjoner brukes, kan NaviKite hente kartfliser fra Kartverket, vær- og varseldata fra relevante offentlige værkilder, og høydedata for valgte koordinater. Online og offline topografiske kart er foreløpig begrenset til Norge.",
+    privacyWatchTitle: "Apple Watch og Siri",
+    privacyWatchText:
+      "Hvis du bruker NaviKite med Apple Watch eller Siri-snarveier, kan navigasjonskommandoer og statusinformasjon utveksles mellom iPhone og Apple Watch for å utføre handlingen du ber om.",
+    privacySharingTitle: "Deling",
+    privacySharingText:
+      "NaviKite selger eller bytter ikke personinformasjon. Data deles bare når det trengs for appfunksjoner, når du selv velger å eksportere eller dele data, eller når det kreves av operativsystemtjenester du velger å bruke.",
+    privacySafetyTitle: "Sikkerhet",
+    privacySafetyText:
+      "NaviKite er et navigasjonshjelpemiddel. Appen erstatter ikke fjellvett, papirkart, kompass, værvurdering, lokalkunnskap eller nødutstyr.",
+    privacyContactTitle: "Kontakt",
+    privacyContactText: "For spørsmål om personvern, kontakt",
   },
   en: {
     navWhy: "Why",
@@ -76,6 +103,33 @@ const translations = {
       "Send a short email with who you are, where you kite, and which iPhone / Apple Watch you use.",
     emailBeta: "Send email",
     footerText: "Beta concept by PK Lunderød · 2026",
+    privacyLink: "Privacy",
+    privacyEyebrow: "Privacy",
+    privacyTitle: "Privacy Policy",
+    privacyUpdated: "Last updated: 20 July 2026",
+    privacyIntroTitle: "Overview",
+    privacyIntroText:
+      "NaviKite is built to provide navigation support for snowkiting and mountain travel. The app uses location, motion and route information to show direction, distance, maps, trip logs and voice guidance. NaviKite does not sell personal data.",
+    privacyDataTitle: "Information the app may use",
+    privacyDataText:
+      "NaviKite may use your device location, compass heading, speed, altitude, saved destinations, routes, waypoints, base position, trip logs and app settings. This information is used to make the navigation features work.",
+    privacyStorageTitle: "Local storage",
+    privacyStorageText:
+      "Saved positions, routes, downloaded map tiles, settings and trip logs are stored locally on your device unless you choose to export or share them. Trip logs can be exported as GPX files.",
+    privacyServicesTitle: "External services",
+    privacyServicesText:
+      "When online features are used, NaviKite may request map tiles from the Norwegian Mapping Authority (Kartverket), weather and forecast data from relevant public weather sources, and elevation data for selected coordinates. Online and offline topographic maps are currently limited to Norway.",
+    privacyWatchTitle: "Apple Watch and Siri",
+    privacyWatchText:
+      "If you use NaviKite with Apple Watch or Siri shortcuts, navigation commands and status information may be exchanged between your iPhone and Apple Watch to perform the requested action.",
+    privacySharingTitle: "Sharing",
+    privacySharingText:
+      "NaviKite does not sell or trade your personal information. Data is only shared when needed to provide app functions, when you choose to export or share data, or when required by the operating system services you choose to use.",
+    privacySafetyTitle: "Safety",
+    privacySafetyText:
+      "NaviKite is a navigation aid. It is not a replacement for proper mountain judgement, paper maps, compass, weather assessment, local knowledge or emergency equipment.",
+    privacyContactTitle: "Contact",
+    privacyContactText: "For privacy questions, contact",
   },
 };
 

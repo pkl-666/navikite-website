@@ -631,6 +631,45 @@ h3 {
   justify-content: center;
 }
 
+.legal-page {
+  overflow: visible;
+}
+
+.legal-content {
+  width: min(52rem, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 5rem 0 4rem;
+}
+
+.legal-content h1 {
+  max-width: none;
+  margin-bottom: 1rem;
+  font-size: clamp(2.7rem, 6vw, 5rem);
+}
+
+.legal-content h2 {
+  margin: 2.2rem 0 0.7rem;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  line-height: 1.1;
+}
+
+.legal-content p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.legal-content a,
+footer a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.legal-content a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
