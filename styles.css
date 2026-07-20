@@ -670,6 +670,189 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.guide-page {
+  overflow: visible;
+}
+
+.guide-hero {
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.52fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 4.5rem 0 2.5rem;
+}
+
+.guide-hero h1 {
+  max-width: 11ch;
+}
+
+.guide-hero img {
+  width: 100%;
+  max-height: 34rem;
+  object-fit: contain;
+  border-radius: 1.6rem;
+  background: #030507;
+  box-shadow:
+    0 2rem 4rem rgba(0, 0, 0, 0.42),
+    0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.guide-layout {
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 0 auto 4rem;
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.guide-toc {
+  position: sticky;
+  top: 5.4rem;
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: rgba(17, 23, 28, 0.82);
+}
+
+.guide-toc a {
+  padding: 0.55rem 0.65rem;
+  border-radius: 0.45rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 0.92rem;
+}
+
+.guide-toc a:hover {
+  background: rgba(18, 200, 236, 0.12);
+  color: var(--text);
+}
+
+.guide-sections {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.guide-card {
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--panel);
+  overflow: hidden;
+}
+
+.guide-card[open] {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.045));
+}
+
+.guide-card summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.4rem;
+  padding: 1rem 1.1rem;
+  cursor: pointer;
+  list-style: none;
+  color: var(--text);
+  font-size: clamp(1.08rem, 2vw, 1.35rem);
+  font-weight: 1000;
+}
+
+.guide-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.guide-card summary::after {
+  content: "+";
+  color: var(--cyan);
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.guide-card[open] summary::after {
+  content: "-";
+}
+
+.guide-card p,
+.guide-card li {
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.62;
+}
+
+.guide-card p,
+.guide-card ol,
+.guide-card .primary-action,
+.guide-button-grid,
+.command-list,
+.guide-wide-image {
+  margin: 0 1.1rem 1rem;
+}
+
+.guide-card ol {
+  padding-left: 1.45rem;
+}
+
+.guide-button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.guide-button-grid article {
+  min-height: 6rem;
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.guide-button-grid strong,
+.guide-button-grid span {
+  display: block;
+}
+
+.guide-button-grid strong {
+  margin-bottom: 0.35rem;
+  color: var(--cyan);
+  font-size: 0.88rem;
+  font-weight: 1000;
+}
+
+.guide-button-grid span {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.command-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.command-list span {
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.45rem;
+  background: rgba(18, 200, 236, 0.13);
+  color: var(--text);
+  font-weight: 900;
+}
+
+.guide-wide-image {
+  display: block;
+  width: calc(100% - 2.2rem);
+  max-height: 34rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--line);
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -696,8 +879,15 @@ footer {
 
   .hero,
   .two-column,
-  .plan-band {
+  .plan-band,
+  .guide-hero,
+  .guide-layout {
     grid-template-columns: 1fr;
+  }
+
+  .guide-toc {
+    position: static;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero {
@@ -717,7 +907,9 @@ footer {
 
 @media (max-width: 540px) {
   .quick-strip,
-  .feature-grid {
+  .feature-grid,
+  .guide-button-grid,
+  .guide-toc {
     grid-template-columns: 1fr;
   }
 

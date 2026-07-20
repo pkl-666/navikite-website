@@ -3,6 +3,7 @@ const translations = {
     navWhy: "Hvorfor",
     navBeta: "Beta",
     betaButton: "Beta",
+    guideNav: "Guide",
     heroEyebrow: "Kommer i 2026",
     heroTitle: "Navigasjon laget av og for snøkitere.",
     heroLead:
@@ -69,6 +70,7 @@ const translations = {
     navWhy: "Why",
     navBeta: "Beta",
     betaButton: "Beta",
+    guideNav: "Guide",
     heroEyebrow: "Coming in 2026",
     heroTitle: "Navigation made by and for snowkiters.",
     heroLead:

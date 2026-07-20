@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NaviKite User Guide</title>
+    <meta
+      name="description"
+      content="NaviKite user guide for snowkiting, mountain navigation, voice guidance, routes, offline maps, Trip Tips and Apple Watch."
+    />
+    <link rel="canonical" href="https://navikite.com/guide.html" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://navikite.com/guide.html" />
+    <meta property="og:site_name" content="NaviKite" />
+    <meta property="og:title" content="NaviKite User Guide" />
+    <meta
+      property="og:description"
+      content="A practical guide to NaviKite navigation, maps, voice readouts, routes, Trip Tips, offline charts and Apple Watch."
+    />
+    <meta property="og:image" content="https://navikite.com/assets/home-map-preview.png" />
+    <link rel="icon" href="assets/navikite-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Main navigation">
+      <a class="brand" href="/" aria-label="NaviKite home">
+        <img src="assets/navikite-icon.png" alt="" />
+        <span>NaviKite</span>
+      </a>
+      <div class="header-actions">
+        <a class="nav-button" href="guide.html" data-i18n="guideNav">Guide</a>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to English">
+          <span data-language-flag>🇬🇧</span>
+          <span data-language-label>English</span>
+        </button>
+        <a class="nav-button" href="mailto:feedback@navikite.com?subject=NaviKite%20beta" data-i18n="betaButton">Beta</a>
+      </div>
+    </header>
+
+    <main class="guide-page">
+      <section class="guide-hero">
+        <div>
+          <p class="eyebrow">NaviKite 2026</p>
+          <h1>NaviKite User Guide</h1>
+          <p class="lead">
+            En praktisk guide til NaviKite slik appen fungerer i siste beta:
+            navigasjon, kart, ruter, talevarsler, TurTips, offline-kart og Apple Watch.
+          </p>
+        </div>
+        <img src="assets/home-map-preview.png" alt="NaviKite startskjerm med kart og kompass" />
+      </section>
+
+      <section class="guide-layout">
+        <nav class="guide-toc" aria-label="Guide sections">
+          <a href="#quick">Kortversjon</a>
+          <a href="#start">Kom i gang</a>
+          <a href="#navigation">Navigasjon og kart</a>
+          <a href="#buttons">Forsideknapper</a>
+          <a href="#routes">Ruter og GPX</a>
+          <a href="#voice">Tale og Siri</a>
+          <a href="#watch">Apple Watch</a>
+          <a href="#plan">Plan og TurTips</a>
+          <a href="#offline">Offline-kart</a>
+          <a href="#logs">Turlogg</a>
+          <a href="#trouble">Feilsøking</a>
+        </nav>
+
+        <div class="guide-sections">
+          <details id="quick" class="guide-card">
+            <summary>Kortversjon</summary>
+            <p>
+              NaviKite er et navigasjonshjelpemiddel for snøkitere og fjellfolk.
+              Appen gir retning, avstand og situasjonsforståelse med tale, skjerm,
+              kart og Apple Watch.
+            </p>
+            <p>
+              NaviKite erstatter ikke kart, kompass, værvurdering eller fjellvett.
+              Veiledningen er som regel luftlinje mot destinasjon, ruteveipunkt eller
+              base; du velger fortsatt trygg linje.
+            </p>
+          </details>
+
+          <details id="start" class="guide-card">
+            <summary>Kom raskt i gang</summary>
+            <ol>
+              <li>Marker base før du drar hvis du kan få behov for Return to Base.</li>
+              <li>Velg destinasjon, lagret punkt, hytte, rute eller GPX-punkt.</li>
+              <li>Sjekk ruten i kartet før du bekrefter start.</li>
+              <li>Velg Kite for vanlig snøkiting, eller Walk / Ski ved sakte forflytning.</li>
+              <li>Sett lydoppdateringer til 10, 20, 30 eller 60 sekunder, 3 eller 5 minutter, eller kun kommando.</li>
+            </ol>
+            <p>
+              Før navigasjon fungerer forsiden som kompass/kartoversikt. Under
+              navigasjon viser NaviKite aktivt mål, avstand og retning. Bruk SCREEN
+              hvis telefonen ligger synlig i armlomme; Exit slår det av igjen.
+            </p>
+          </details>
+
+          <details id="navigation" class="guide-card">
+            <summary>Navigasjon, kart og GPS</summary>
+            <p>
+              NaviKite bruker GPS-kurs for å lese retning relativt til fartsretningen din.
+              I Kite-modus trengs vanligvis ca. 4 km/t, fersk GPS-kurs og akseptabel
+              nøyaktighet.
+            </p>
+            <p>
+              Hvis appen sier at den venter på GPS-kurs, at GPS-kursen er upålitelig
+              eller at den stabiliserer, fortsett jevnt noen sekunder før du stoler på
+              neste readout. Walk / Ski er for sakte forflytning og venter på stabil
+              bevegelse i stedet for fart.
+            </p>
+            <p>
+              Fullskjermkartet er nord opp, med posisjonspilen roterende over der du er.
+              Det lille kartet i kompassfeltet på forsiden roterer fortsatt med kompasset.
+              Med aktiv rute åpnes fullskjermkartet rundt nåværende posisjon, slik at
+              nærområdet rundt deg er lett å lese først.
+            </p>
+          </details>
+
+          <details id="buttons" class="guide-card">
+            <summary>Forsideknapper</summary>
+            <div class="guide-button-grid">
+              <article><strong>SCREEN</strong><span>Holder skjermen våken når telefonen ligger synlig.</span></article>
+              <article><strong>SEARCH DEST</strong><span>Finn destinasjon med søk eller direkte koordinater.</span></article>
+              <article><strong>MARK BASE</strong><span>Lagrer nåværende posisjon som base.</span></article>
+              <article><strong>RETURN TO BASE</strong><span>Starter navigasjon tilbake til lagret base.</span></article>
+              <article><strong>OPEN/CREATE ROUTE</strong><span>Lag rute, importer GPX, start, endre eller del ruter.</span></article>
+              <article><strong>WHITEOUT</strong><span>Hyppigere talevarsler og valg om nærmeste hytte eller videre til mål.</span></article>
+              <article><strong>START/STOP VOICE</strong><span>Pauser eller starter automatiske talevarsler. Navigasjon fortsetter.</span></article>
+              <article><strong>SAVE/SHARE PRES POS</strong><span>Lagre privat punkt, del “jeg er her”, eller del GPX-veipunkt.</span></article>
+              <article><strong>START LOGGING</strong><span>Starter turlogg uten at navigasjon må være aktiv.</span></article>
+              <article><strong>PLAN</strong><span>Vind, Yr-varsel, veistatus, webkamera og TurTips.</span></article>
+              <article><strong>USER GUIDE</strong><span>Åpner guiden i appen.</span></article>
+              <article><strong>EXIT</strong><span>Stopper navigasjon, tale, turlogg, locked-screen info og Watch Mode etter bekreftelse.</span></article>
+            </div>
+          </details>
+
+          <details id="routes" class="guide-card">
+            <summary>Ruter, GPX og deling</summary>
+            <p>
+              Du kan lage ruter i NaviKite, importere GPX, endre lagrede ruter og dele
+              ferdige ruter via AirDrop eller Meldinger. Venner kan åpne GPX-filen i
+              NaviKite og få samme rute.
+            </p>
+            <p>
+              Før start viser NaviKite en rutesjekk i fullskjermkart. Der ser du linje,
+              avstand og høydeinformasjon når den er tilgjengelig. Navigasjonen starter
+              først etter at du bekrefter.
+            </p>
+            <p>
+              Ruteveipunkter går videre når du er nær nok, normalt innenfor ca. 100 m.
+              Bruk “neste veipunkt” hvis du vil hoppe videre manuelt.
+            </p>
+          </details>
+
+          <details id="voice" class="guide-card">
+            <summary>Talevarsler og Siri</summary>
+            <p>
+              Automatiske talevarsler følger intervallet i Innstillinger. Normale readouts
+              gir retning og noen ganger avstand. NaviKite forsøker å ikke gjenta samme
+              statusmelding unødvendig når du står stille eller mangler god kurs.
+            </p>
+            <p>
+              Bruk Kito, Keeto eller Keto som Siri-kodeord, uttalt “kee-to”. Korte
+              kommandoer fungerer best, særlig i vind eller fra låst skjerm.
+            </p>
+            <div class="command-list">
+              <span>Kito oppdater</span>
+              <span>Kito base</span>
+              <span>Kito hytte</span>
+              <span>Kito neste</span>
+              <span>Kito stopp tale</span>
+              <span>Kito start tale</span>
+              <span>Kito stopp navigasjon</span>
+              <span>Kito whiteout</span>
+            </div>
+            <p>
+              Siri-kommandoer starter handlingen direkte uten kartbekreftelse, slik at de
+              fungerer i felt når du ikke vil håndtere telefonen.
+            </p>
+          </details>
+
+          <details id="watch" class="guide-card">
+            <summary>Apple Watch</summary>
+            <p>
+              Installer NaviKite fra TestFlight på den sammenkoblede iPhonen. Watch-appen
+              installeres vanligvis automatisk; hvis ikke, aktiver NaviKiteWatch i Watch-appen.
+            </p>
+            <p>
+              Start navigasjon på telefonen og åpne NaviKiteWatch. Grønn PHONE betyr at
+              klokken mottar fersk navigasjon fra telefonen. Gul LOCAL betyr at klokken
+              midlertidig navigerer mot sist mottatte destinasjon med egen GPS. Rød SYNC
+              eller NO PHONE betyr at forbindelsen ikke er klar.
+            </p>
+            <p>
+              Under bevegelse viser TRAVEL fartsretningen din, mens DEST peker mot
+              destinasjonen. Når du står stille går klokken over til roterende kompassrose
+              med destinasjonen markert rundt ytterkanten.
+            </p>
+          </details>
+
+          <details id="plan" class="guide-card">
+            <summary>Plan, vind og TurTips</summary>
+            <p>
+              PLAN viser utvalgte målestasjoner i fjellet med vindstyrke, vindretning og
+              observasjonstid. Panelet kan også vise veistatus, webkamera og Yr-varsel
+              for stasjoner eller egne spots.
+            </p>
+            <p>
+              TurTips bruker valgt startpunkt, vindretning, sidevindsektorer og
+              offline-destinasjoner over 900 m innen 60 km. DNT og bemannede hytter
+              prioriteres der det er relevant. Kartet viser også vindsektorer, selv når
+              det ikke finnes en konkret match i listen.
+            </p>
+            <img class="guide-wide-image" src="assets/turtips-map.png" alt="TurTips kart med vindsektor og forslag" />
+          </details>
+
+          <details id="offline" class="guide-card">
+            <summary>Innstillinger og offline-kart</summary>
+            <p>
+              Sveip venstre eller høyre fra forsiden for å åpne Innstillinger. Her velger
+              du reisemodus, lydintervall, distanse i oppdateringer, taleveiledning,
+              turlogg, språk og offline-kart.
+            </p>
+            <p>
+              Offline-kart er en beta-funksjon: velg område, last ned før turen, og
+              NaviKite prøver lokale Kartverket-fliser før nettfliser. Online og offline
+              topografiske kart er foreløpig begrenset til Norge.
+            </p>
+            <p>
+              Offline-punkter vises både på kartet og i TurTips som nyttig kontroll på
+              koordinatene.
+            </p>
+          </details>
+
+          <details id="logs" class="guide-card">
+            <summary>Turlogg</summary>
+            <p>
+              Slå på Turlogg i Innstillinger. Når navigasjon starter, spør NaviKite om
+              turen skal loggføres. Du kan også trykke Start Logging på forsiden for å
+              loggføre en tur uten destinasjon eller rute.
+            </p>
+            <p>
+              Når loggingen avsluttes viser NaviKite et turreferat med distanse, tid,
+              fart, høydemetre og antall punkter. Trip Logs viser enkeltturer,
+              sesongsummeringer fra juni til juni og totalen fra appen ble tatt i bruk.
+            </p>
+          </details>
+
+          <details id="trouble" class="guide-card">
+            <summary>Feilsøking og beta</summary>
+            <p>
+              Hvis kartet mangler, sjekk nett eller last ned offline-kart før tur.
+              Hvis readouts virker gamle, sjekk at tale er på, at stedstillatelse er
+              Always / Alltid, og at Low Power Mode ikke begrenser bakgrunnsoppdateringer.
+            </p>
+            <p>
+              Hvis Siri misforstår, bruk kortere Kito-kommandoer. NaviKite er under
+              aktiv beta-testing; konkrete eksempler fra ekte turer er den mest nyttige
+              tilbakemeldingen.
+            </p>
+            <a class="primary-action" href="mailto:feedback@navikite.com?subject=NaviKite%20feedback">Send tilbakemelding</a>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>NaviKite</span>
+      <span>
+        <span data-i18n="footerText">Beta-konsept av PK Lunderød · 2026</span>
+        · <a href="guide.html" data-i18n="guideNav">Guide</a>
+        · <a href="privacy.html" data-i18n="privacyLink">Personvern</a>
+      </span>
+    </footer>
+  </body>
+</html>
