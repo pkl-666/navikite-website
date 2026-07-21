@@ -7,7 +7,7 @@ const translations = {
     heroEyebrow: "Kommer i 2026",
     heroTitle: "Navigasjon laget av og for snøkitere.",
     heroLead:
-      "NaviKite er under aktiv beta-testing: retning, avstand og enkle oppdateringer når telefonen ligger pakket bort og fjellet krever fokus.",
+      "NaviKite er under aktiv beta-testing: retning, avstand og enkle oppdateringer når telefonen ligger pakket bort og fjellet krever fokus. På sikt ønsker vi også å vise oppdaterte hensynssoner, slik at kitere lettere kan planlegge rundt sårbare villreinområder og gjeldende lokale råd.",
     tryBeta: "Prøv beta",
     readMore: "Les mer",
     heroReadout: "25 HØYRE · 12.7 KILOMETER",
@@ -77,7 +77,7 @@ const translations = {
     heroEyebrow: "Coming in 2026",
     heroTitle: "Navigation made by and for snowkiters.",
     heroLead:
-      "NaviKite is in active beta testing: direction, distance and simple readouts when the phone is packed away and the mountain needs your focus.",
+      "NaviKite is in active beta testing: direction, distance and simple readouts when the phone is packed away and the mountain needs your focus. Over time, we also want to show updated advisory zones so kiters can plan around sensitive wild reindeer areas and current local guidance.",
     tryBeta: "Try beta",
     readMore: "Read more",
     heroReadout: "25 RIGHT · 12.7 KILOMETERS",
