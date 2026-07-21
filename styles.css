@@ -785,6 +785,16 @@ footer a:hover {
   line-height: 1.62;
 }
 
+.guide-card a {
+  color: var(--cyan);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.guide-card a:hover {
+  text-decoration: underline;
+}
+
 .guide-card p,
 .guide-card ol,
 .guide-card .primary-action,

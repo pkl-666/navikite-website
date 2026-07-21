@@ -41,7 +41,7 @@ const translations = {
     privacyLink: "Personvern",
     privacyEyebrow: "Personvern",
     privacyTitle: "Privacy Policy",
-    privacyUpdated: "Sist oppdatert: 20. juli 2026",
+    privacyUpdated: "Sist oppdatert: 21. juli 2026",
     privacyIntroTitle: "Oversikt",
     privacyIntroText:
       "NaviKite er laget for å gi navigasjonsstøtte for snøkiting og ferdsel i fjellet. Appen bruker posisjon, bevegelse og ruteinformasjon for å vise retning, avstand, kart, turlogger og stemmeveiledning. NaviKite selger ikke persondata.",
@@ -54,6 +54,9 @@ const translations = {
     privacyServicesTitle: "Eksterne tjenester",
     privacyServicesText:
       "Når online-funksjoner brukes, kan NaviKite hente kartfliser fra Kartverket, vær- og varseldata fra relevante offentlige værkilder, og høydedata for valgte koordinater. Online og offline topografiske kart er foreløpig begrenset til Norge.",
+    privacyKartverketTermsText:
+      "Kartdata fra Kartverket brukes i tråd med Kartverkets vilkår for åpne data, med synlig kreditering på kartflater. Les vilkårene her:",
+    privacyKartverketTermsLink: "Kartverkets vilkår for bruk",
     privacyWatchTitle: "Apple Watch og Siri",
     privacyWatchText:
       "Hvis du bruker NaviKite med Apple Watch eller Siri-snarveier, kan navigasjonskommandoer og statusinformasjon utveksles mellom iPhone og Apple Watch for å utføre handlingen du ber om.",
@@ -108,7 +111,7 @@ const translations = {
     privacyLink: "Privacy",
     privacyEyebrow: "Privacy",
     privacyTitle: "Privacy Policy",
-    privacyUpdated: "Last updated: 20 July 2026",
+    privacyUpdated: "Last updated: 21 July 2026",
     privacyIntroTitle: "Overview",
     privacyIntroText:
       "NaviKite is built to provide navigation support for snowkiting and mountain travel. The app uses location, motion and route information to show direction, distance, maps, trip logs and voice guidance. NaviKite does not sell personal data.",
@@ -121,6 +124,9 @@ const translations = {
     privacyServicesTitle: "External services",
     privacyServicesText:
       "When online features are used, NaviKite may request map tiles from the Norwegian Mapping Authority (Kartverket), weather and forecast data from relevant public weather sources, and elevation data for selected coordinates. Online and offline topographic maps are currently limited to Norway.",
+    privacyKartverketTermsText:
+      "Kartverket map data is used under Kartverket's terms for open data, with visible credit on map views. Read the terms here:",
+    privacyKartverketTermsLink: "Kartverket terms of use",
     privacyWatchTitle: "Apple Watch and Siri",
     privacyWatchText:
       "If you use NaviKite with Apple Watch or Siri shortcuts, navigation commands and status information may be exchanged between your iPhone and Apple Watch to perform the requested action.",
