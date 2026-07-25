@@ -1,14 +1,16 @@
+const APP_STORE_URL = "https://apps.apple.com/no/app/navikite/id6775079826?l=nb";
+
 const translations = {
   no: {
     navWhy: "Hvorfor",
-    navBeta: "Beta",
-    betaButton: "Beta",
+    navBeta: "App Store",
+    appStoreButton: "App Store",
     guideNav: "Guide",
-    heroEyebrow: "Kommer i 2026",
+    heroEyebrow: "NaviKite",
     heroTitle: "Navigasjon laget av og for snøkitere.",
     heroLead:
-      "NaviKite er under aktiv beta-testing: retning, avstand og enkle oppdateringer når telefonen ligger pakket bort og fjellet krever fokus. På sikt ønsker vi også å vise oppdaterte hensynssoner, slik at kitere lettere kan planlegge rundt sårbare villreinområder og gjeldende lokale råd.",
-    tryBeta: "Prøv beta",
+      "NaviKite gir retning, avstand og enkle oppdateringer når telefonen ligger pakket bort og fjellet krever fokus. På sikt ønsker vi også å vise oppdaterte hensynssoner, slik at kitere lettere kan planlegge rundt sårbare villreinområder og gjeldende lokale råd.",
+    downloadApp: "Last ned i App Store",
     readMore: "Les mer",
     heroReadout: "25 HØYRE · 12.7 KILOMETER",
     stripVoiceTitle: "Stemme",
@@ -27,17 +29,16 @@ const translations = {
     whyP3:
       "NaviKite er et navigasjonshjelpemiddel, ikke en erstatning for kart, kompass, værvurdering og vanlig fjellvett.",
     statusEyebrow: "Status",
-    statusTitle: "Under utvikling. Testes i felt.",
+    statusTitle: "Laget for feltbruk.",
     statusText:
-      "NaviKite er ikke offentlig tilgjengelig ennå. Første mål er en liten beta med folk som faktisk bruker appen ute i vind, kulde og dårlig dekning.",
+      "NaviKite er utviklet og testet ute i vind, kulde og dårlig dekning, med fokus på korte navigasjonsbeskjeder og god situasjonsforståelse.",
     panelIphone: "iPhone",
     panelWatch: "Watch",
-    betaEyebrow: "Beta",
-    betaTitle: "Interessert i å prøve beta-versjonen?",
+    appStoreEyebrow: "App Store",
+    appStoreTitle: "NaviKite er tilgjengelig i App Store.",
     betaText:
-      "Send en kort e-post med hvem du er, hvor du kiter, og hvilken iPhone / Apple Watch du bruker.",
-    emailBeta: "Send e-post",
-    footerText: "Beta-konsept av PK Lunderød · 2026",
+      "Last ned appen på iPhone og bruk den sammen med Apple Watch når du vil ha navigasjonsstøtte på håndleddet.",
+    footerText: "NaviKite av PK Lunderød · 2026",
     privacyLink: "Personvern",
     privacyEyebrow: "Personvern",
     privacyTitle: "Privacy Policy",
@@ -71,14 +72,14 @@ const translations = {
   },
   en: {
     navWhy: "Why",
-    navBeta: "Beta",
-    betaButton: "Beta",
+    navBeta: "App Store",
+    appStoreButton: "App Store",
     guideNav: "Guide",
-    heroEyebrow: "Coming in 2026",
+    heroEyebrow: "NaviKite",
     heroTitle: "Navigation made by and for snowkiters.",
     heroLead:
-      "NaviKite is in active beta testing: direction, distance and simple readouts when the phone is packed away and the mountain needs your focus. Over time, we also want to show updated advisory zones so kiters can plan around sensitive wild reindeer areas and current local guidance.",
-    tryBeta: "Try beta",
+      "NaviKite provides direction, distance and simple readouts when the phone is packed away and the mountain needs your focus. Over time, we also want to show updated advisory zones so kiters can plan around sensitive wild reindeer areas and current local guidance.",
+    downloadApp: "Download on the App Store",
     readMore: "Read more",
     heroReadout: "25 RIGHT · 12.7 KILOMETERS",
     stripVoiceTitle: "Voice",
@@ -97,17 +98,16 @@ const translations = {
     whyP3:
       "NaviKite is a navigation aid, not a replacement for maps, compass, weather judgement and sound mountain sense.",
     statusEyebrow: "Status",
-    statusTitle: "In development. Tested in the field.",
+    statusTitle: "Built for field use.",
     statusText:
-      "NaviKite is not publicly available yet. The first goal is a small beta with people who actually use the app outside in wind, cold and poor coverage.",
+      "NaviKite is developed and tested outside in wind, cold and poor coverage, with a focus on short navigation readouts and situational awareness.",
     panelIphone: "iPhone",
     panelWatch: "Watch",
-    betaEyebrow: "Beta",
-    betaTitle: "Interested in trying the beta version?",
+    appStoreEyebrow: "App Store",
+    appStoreTitle: "NaviKite is available on the App Store.",
     betaText:
-      "Send a short email with who you are, where you kite, and which iPhone / Apple Watch you use.",
-    emailBeta: "Send email",
-    footerText: "Beta concept by PK Lunderød · 2026",
+      "Download the app on iPhone and use it with Apple Watch when you want navigation support on your wrist.",
+    footerText: "NaviKite by PK Lunderød · 2026",
     privacyLink: "Privacy",
     privacyEyebrow: "Privacy",
     privacyTitle: "Privacy Policy",
@@ -174,3 +174,7 @@ document.querySelector("[data-language-toggle]")?.addEventListener("click", () =
 });
 
 applyLanguage("no");
+
+document.querySelectorAll("[data-app-store-link]").forEach((node) => {
+  node.setAttribute("href", APP_STORE_URL);
+});
