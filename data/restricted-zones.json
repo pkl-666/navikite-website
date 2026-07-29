@@ -1,25 +1,39 @@
 {
-  "version": 1,
-  "updatedAt": "2026-07-29T00:00:00Z",
+  "version": 2,
+  "updatedAt": "2026-07-29T14:10:00Z",
   "source": {
-    "name": "NaviKite prototype feed",
+    "name": "NaviKite manual test feed",
     "url": "https://navikite.com/data/restricted-zones.json"
   },
   "zones": [
     {
-      "id": "hardangervidda-prototype-1",
-      "name": "Hardangervidda prototype zone",
+      "id": "hardangervidda-test-west-1",
+      "name": "Hardangervidda test west",
       "status": "prototype",
       "validFrom": null,
       "validTo": null,
-      "sourceName": "NaviKite prototype feed",
+      "sourceName": "NaviKite manual test feed",
       "sourceURL": "https://navikite.com/data/restricted-zones.json",
       "polygon": [
-        { "lat": 60.31, "lon": 7.76 },
-        { "lat": 60.33, "lon": 8.08 },
-        { "lat": 60.12, "lon": 8.23 },
-        { "lat": 59.98, "lon": 7.96 },
-        { "lat": 60.11, "lon": 7.66 }
+        { "lat": 60.395, "lon": 7.365 },
+        { "lat": 60.424, "lon": 7.545 },
+        { "lat": 60.318, "lon": 7.622 },
+        { "lat": 60.262, "lon": 7.471 }
+      ]
+    },
+    {
+      "id": "hardangervidda-test-east-1",
+      "name": "Hardangervidda test east",
+      "status": "prototype",
+      "validFrom": null,
+      "validTo": null,
+      "sourceName": "NaviKite manual test feed",
+      "sourceURL": "https://navikite.com/data/restricted-zones.json",
+      "polygon": [
+        { "lat": 60.205, "lon": 8.045 },
+        { "lat": 60.255, "lon": 8.255 },
+        { "lat": 60.095, "lon": 8.315 },
+        { "lat": 60.058, "lon": 8.102 }
       ]
     }
   ]
