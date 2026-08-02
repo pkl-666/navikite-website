@@ -45,8 +45,8 @@
           <p class="eyebrow">NaviKite 2026</p>
           <h1>NaviKite User Guide</h1>
           <p class="lead">
-            En praktisk guide til NaviKite slik appen fungerer i siste beta:
-            navigasjon, kart, ruter, talevarsler, TurTips, offline-kart og Apple Watch.
+            En praktisk guide til NaviKite slik appen fungerer i siste versjon:
+            navigasjon, kart, ruter, talevarsler, TurTips, restriksjonssoner, offline-kart og Apple Watch.
           </p>
         </div>
         <img src="assets/home-map-preview.png" alt="NaviKite startskjerm med kart og kompass" />
@@ -63,6 +63,7 @@
           <a href="#watch">Apple Watch</a>
           <a href="#plan">Plan og TurTips</a>
           <a href="#offline">Offline-kart</a>
+          <a href="#restricted">Restriksjonssoner</a>
           <a href="#logs">Turlogg</a>
           <a href="#trouble">Feilsøking</a>
         </nav>
@@ -86,8 +87,8 @@
             <summary>Kom raskt i gang</summary>
             <ol>
               <li>Marker base før du drar hvis du kan få behov for Return to Base.</li>
-              <li>Velg destinasjon, lagret punkt, hytte, rute eller GPX-punkt.</li>
-              <li>Sjekk ruten i kartet før du bekrefter start.</li>
+              <li>Velg destinasjon med søk, lagret punkt, kartvalg, hytte, rute eller GPX-punkt.</li>
+              <li>Sjekk mål eller rute i kartet før du bekrefter start.</li>
               <li>Velg Kite for vanlig snøkiting, eller Walk / Ski ved sakte forflytning.</li>
               <li>Sett lydoppdateringer til 10, 20, 30 eller 60 sekunder, 3 eller 5 minutter, eller kun kommando.</li>
             </ol>
@@ -95,6 +96,11 @@
               Før navigasjon fungerer forsiden som kompass/kartoversikt. Under
               navigasjon viser NaviKite aktivt mål, avstand og retning. Bruk SCREEN
               hvis telefonen ligger synlig i armlomme; Exit slår det av igjen.
+            </p>
+            <p>
+              Trykk på kompassrosen på forsiden for å åpne fullskjermkartet. Dette er
+              ment som rask situasjonsforståelse når du stopper og vil se terreng,
+              posisjon, retning, rute og eventuelle restriksjonssoner rundt deg.
             </p>
           </details>
 
@@ -117,16 +123,21 @@
               Med aktiv rute åpnes fullskjermkartet rundt nåværende posisjon, slik at
               nærområdet rundt deg er lett å lese først.
             </p>
+            <p>
+              Posisjonen vises med en tydelig retningskjegle. Når du står stille
+              kan du snu telefonen til kartet og terrenget stemmer. Kartet kan panoreres,
+              zoomes med pinch og sentreres tilbake på posisjonen din.
+            </p>
           </details>
 
           <details id="buttons" class="guide-card">
             <summary>Forsideknapper</summary>
             <div class="guide-button-grid">
               <article><strong>SCREEN</strong><span>Holder skjermen våken når telefonen ligger synlig.</span></article>
-              <article><strong>SEARCH DEST</strong><span>Finn destinasjon med søk eller direkte koordinater.</span></article>
+              <article><strong>SEARCH DEST</strong><span>Finn destinasjon med søk, direkte koordinater eller ved å holde fingeren på kartet.</span></article>
               <article><strong>MARK BASE</strong><span>Lagrer nåværende posisjon som base.</span></article>
               <article><strong>RETURN TO BASE</strong><span>Starter navigasjon tilbake til lagret base.</span></article>
-              <article><strong>OPEN/CREATE ROUTE</strong><span>Lag rute, importer GPX, start, endre eller del ruter.</span></article>
+              <article><strong>OPEN/CREATE ROUTE</strong><span>Lag rute på kartet, importer GPX, start, endre eller del ruter.</span></article>
               <article><strong>WHITEOUT</strong><span>Hyppigere talevarsler og valg om nærmeste hytte eller videre til mål.</span></article>
               <article><strong>START/STOP VOICE</strong><span>Pauser eller starter automatiske talevarsler. Navigasjon fortsetter.</span></article>
               <article><strong>SAVE/SHARE PRES POS</strong><span>Lagre privat punkt, del “jeg er her”, eller del GPX-veipunkt.</span></article>
@@ -145,6 +156,13 @@
               NaviKite og få samme rute.
             </p>
             <p>
+              Trykk Ny og deretter Kart for å lage en rute direkte på Kartverket-kartet.
+              Hold fingeren på kartet for å legge til startpunkt og veipunkter, for
+              eksempel Dyranut, Besso, Stigstuv og Tuva. NaviKite tegner luftlinjer
+              mellom punktene og viser distanse per etappe, total distanse og høydemeter
+              når høydegrunnlag er tilgjengelig.
+            </p>
+            <p>
               Før start viser NaviKite en rutesjekk i fullskjermkart. Der ser du linje,
               avstand og høydeinformasjon når den er tilgjengelig. Navigasjonen starter
               først etter at du bekrefter.
@@ -152,6 +170,10 @@
             <p>
               Ruteveipunkter går videre når du er nær nok, normalt innenfor ca. 100 m.
               Bruk “neste veipunkt” hvis du vil hoppe videre manuelt.
+            </p>
+            <p>
+              Restriksjonssoner vises i rødt på rutekart og rutesjekk, slik at du kan
+              planlegge rundt dem før turen starter.
             </p>
           </details>
 
@@ -185,8 +207,9 @@
           <details id="watch" class="guide-card">
             <summary>Apple Watch</summary>
             <p>
-              Installer NaviKite fra TestFlight på den sammenkoblede iPhonen. Watch-appen
-              installeres vanligvis automatisk; hvis ikke, aktiver NaviKiteWatch i Watch-appen.
+              Installer NaviKite fra App Store på den sammenkoblede iPhonen, eller fra
+              TestFlight hvis du tester en betaversjon. Watch-appen installeres vanligvis
+              automatisk; hvis ikke, aktiver NaviKiteWatch i Watch-appen.
             </p>
             <p>
               Start navigasjon på telefonen og åpne NaviKiteWatch. Grønn PHONE betyr at
@@ -214,6 +237,11 @@
               prioriteres der det er relevant. Kartet viser også vindsektorer, selv når
               det ikke finnes en konkret match i listen.
             </p>
+            <p>
+              Egne spots kan brukes som startpunkt, varselpunkt og TurTips-destinasjoner.
+              I TurTips kan slike punkter fjernes fra TurTips-listen uten å slette selve
+              lagrede punktet andre steder i appen.
+            </p>
             <img class="guide-wide-image" src="assets/turtips-map.png" alt="TurTips kart med vindsektor og forslag" />
           </details>
 
@@ -240,6 +268,25 @@
             </p>
           </details>
 
+          <details id="restricted" class="guide-card">
+            <summary>Restriksjonssoner</summary>
+            <p>
+              Restriksjonssoner er laget for situasjonsforståelse og ansvarlig ferdsel.
+              Når soner er tilgjengelige, vises de som røde felt på restriksjonskartet,
+              i ruteplanleggingen og i rutesjekken før start.
+            </p>
+            <p>
+              Sonene kan hentes fra NaviKites oppdaterte nettfeed. Foreløpig er dette en
+              forberedt funksjon for fremtidige hensynssoner og lokale råd, ikke en
+              erstatning for offisielle vedtak, skilting eller informasjon fra
+              forvaltningen.
+            </p>
+            <p>
+              Appen kan varsle når du nærmer deg en restriksjonssone. Hvis sonene virker
+              gamle, oppdater dem i Innstillinger eller start appen på nytt.
+            </p>
+          </details>
+
           <details id="logs" class="guide-card">
             <summary>Turlogg</summary>
             <p>
@@ -252,18 +299,24 @@
               fart, høydemetre og antall punkter. Trip Logs viser enkeltturer,
               sesongsummeringer fra juni til juni og totalen fra appen ble tatt i bruk.
             </p>
+            <p>
+              Trykk View / Vis på en enkelt tur for å åpne sporet direkte på kartet.
+              Turen kan også eksporteres som GPX.
+            </p>
           </details>
 
           <details id="trouble" class="guide-card">
-            <summary>Feilsøking og beta</summary>
+            <summary>Feilsøking og tilbakemelding</summary>
             <p>
               Hvis kartet mangler, sjekk nett eller last ned offline-kart før tur.
               Hvis readouts virker gamle, sjekk at tale er på, at stedstillatelse er
               Always / Alltid, og at Low Power Mode ikke begrenser bakgrunnsoppdateringer.
             </p>
             <p>
-              Hvis Siri misforstår, bruk kortere Kito-kommandoer. NaviKite er under
-              aktiv beta-testing; konkrete eksempler fra ekte turer er den mest nyttige
+              Hvis Siri misforstår, bruk kortere Kito-kommandoer. Hvis restriksjonssoner
+              virker utdaterte, oppdater dem i Innstillinger eller restart appen.
+              NaviKite er under
+              aktiv utvikling; konkrete eksempler fra ekte turer er den mest nyttige
               tilbakemeldingen.
             </p>
             <a class="primary-action" href="mailto:feedback@navikite.com?subject=NaviKite%20feedback">Send tilbakemelding</a>
@@ -275,7 +328,7 @@
     <footer>
       <span>NaviKite</span>
       <span>
-        <span data-i18n="footerText">Beta-konsept av PK Lunderød · 2026</span>
+        <span data-i18n="footerText">NaviKite av PK Lunderød · 2026</span>
         · <a href="guide.html" data-i18n="guideNav">Guide</a>
         · <a href="privacy.html" data-i18n="privacyLink">Personvern</a>
       </span>
