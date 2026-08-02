@@ -1,26 +1,9 @@
 {
-  "version": 4,
-  "updatedAt": "2026-07-29T19:55:00Z",
+  "version": 1,
+  "updatedAt": "2026-08-03T00:00:00Z",
   "source": {
-    "name": "NaviKite demo restricted zones",
+    "name": "NaviKite restricted zones feed",
     "url": "https://navikite.com/data/restricted-zones.json"
   },
-  "zones": [
-    {
-      "id": "hardangervidda-demo-1",
-      "name": "Hardangervidda demo restricted zone",
-      "status": "demo",
-      "validFrom": null,
-      "validTo": null,
-      "sourceName": "NaviKite demo restricted zones",
-      "sourceURL": "https://navikite.com/data/restricted-zones.json",
-      "polygon": [
-        { "lat": 60.310, "lon": 7.760 },
-        { "lat": 60.330, "lon": 8.080 },
-        { "lat": 60.120, "lon": 8.230 },
-        { "lat": 59.980, "lon": 7.960 },
-        { "lat": 60.110, "lon": 7.660 }
-      ]
-    }
-  ]
+  "zones": []
 }
