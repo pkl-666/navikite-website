@@ -153,6 +153,10 @@ function applyLanguage(language) {
     if (value) node.textContent = value;
   });
 
+  document.querySelectorAll("[data-language-content]").forEach((node) => {
+    node.hidden = node.dataset.languageContent !== language;
+  });
+
   const flag = document.querySelector("[data-language-flag]");
   const label = document.querySelector("[data-language-label]");
   const toggle = document.querySelector("[data-language-toggle]");

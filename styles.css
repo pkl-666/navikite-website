@@ -674,6 +674,10 @@ footer a:hover {
   overflow: visible;
 }
 
+[data-language-content][hidden] {
+  display: none;
+}
+
 .guide-hero {
   width: min(var(--max), calc(100% - 2rem));
   margin: 0 auto;
