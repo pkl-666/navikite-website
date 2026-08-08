@@ -140,7 +140,7 @@
             <summary>Forsideknapper</summary>
             <div class="guide-button-grid">
               <article><strong>SCREEN</strong><span>Holder skjermen våken når telefonen ligger synlig.</span></article>
-              <article><strong>SEARCH DEST</strong><span>Finn destinasjon med søk, direkte koordinater eller ved å holde fingeren på kartet.</span></article>
+              <article><strong>SEARCH DEST</strong><span>Finn destinasjon med søk, koordinater eller kart. Offline-hytter og punkter kan velges med GO.</span></article>
               <article><strong>MARK BASE</strong><span>Lagrer nåværende posisjon som base.</span></article>
               <article><strong>RETURN TO BASE</strong><span>Starter navigasjon tilbake til lagret base.</span></article>
               <article><strong>OPEN/CREATE ROUTE</strong><span>Lag rute på kartet, importer GPX, start, endre eller del ruter.</span></article>
@@ -238,10 +238,16 @@
               for stasjoner eller egne spots.
             </p>
             <p>
+              Legg til spot åpner kartet. Hold fingeren på kartet, gi punktet navn
+              og lagre det som eget varselpunkt.
+            </p>
+            <p>
               TurTips bruker valgt startpunkt, vindretning, sidevindsektorer og
               offline-destinasjoner over 900 m innen 60 km. DNT og bemannede hytter
-              prioriteres der det er relevant. Kartet viser også vindsektorer, selv når
-              det ikke finnes en konkret match i listen.
+              prioriteres der det er relevant. Det lille TurTips-kartet er en oversikt
+              og åpner fullskjerm når du trykker på det. I fullskjerm trykker du på en
+              markør og deretter GO for å starte navigasjon. Kartet viser også
+              vindsektorer, selv når det ikke finnes en konkret match i listen.
             </p>
             <p>
               Egne spots kan brukes som startpunkt, varselpunkt og TurTips-destinasjoner.
@@ -256,11 +262,19 @@
             <p>
               Sveip venstre eller høyre fra forsiden for å åpne Innstillinger. Her velger
               du reisemodus, lydintervall, distanse i oppdateringer, taleveiledning,
-              turlogg, språk og offline-kart.
+              turlogg, språk, kartkilde og offline-kart.
+            </p>
+            <p>
+              Kartkilde lar deg velge mellom Norge topografisk og Worldwide. Norge
+              topografisk bruker Kartverket og støtter NaviKites offline-nedlastinger.
+              Worldwide bruker Apple Maps for global dekning, men NaviKite kan ikke
+              styre eller garantere Apple Maps-caching.
             </p>
             <p>
               Offline-kart er en beta-funksjon: velg område, last ned før turen, og
-              NaviKite prøver lokale Kartverket-fliser før nettfliser. Online og offline
+              NaviKite prøver lokale Kartverket-fliser før nettfliser. Offline-siden
+              har en dekningsoversikt; trykk på den for å åpne fullskjermkart med pan
+              og pinch-zoom over tilgjengelige nedlastingsområder. Online og offline
               topografiske kart er foreløpig begrenset til Norge.
             </p>
             <p>
@@ -431,7 +445,7 @@
             <summary>Home buttons</summary>
             <div class="guide-button-grid">
               <article><strong>SCREEN</strong><span>Keeps the screen awake when the phone is visible.</span></article>
-              <article><strong>SEARCH DEST</strong><span>Find a destination by search, coordinates or by holding on the map.</span></article>
+              <article><strong>SEARCH DEST</strong><span>Find a destination by search, coordinates or map. Offline huts and points can be selected with GO.</span></article>
               <article><strong>MARK BASE</strong><span>Saves your current position as base.</span></article>
               <article><strong>RETURN TO BASE</strong><span>Starts navigation back to saved base.</span></article>
               <article><strong>OPEN/CREATE ROUTE</strong><span>Create routes on the map, import GPX, start, edit or share routes.</span></article>
@@ -534,11 +548,17 @@
               status, webcams and Yr forecasts for stations or your own spots.
             </p>
             <p>
+              Add Spot opens the map. Hold on the map, name the point and save
+              it as your own forecast spot.
+            </p>
+            <p>
               Trip Tips uses the selected start point, wind direction, sidewind
               sectors and offline destinations above 900 m within 60 km. DNT
-              huts and staffed huts are prioritised where relevant. The map also
-              shows wind sectors even when there is no concrete match in the
-              list.
+              huts and staffed huts are prioritised where relevant. The small
+              Trip Tips map is an overview and opens fullscreen when tapped. In
+              fullscreen, tap a marker and then GO to start navigation. The map
+              also shows wind sectors even when there is no concrete match in
+              the list.
             </p>
             <p>
               Your own spots can be used as start points, forecast points and
