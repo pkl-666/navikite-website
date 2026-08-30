@@ -11,6 +11,10 @@ const translations = {
     heroLead:
       "NaviKite gir retning, avstand og enkle oppdateringer når telefonen ligger pakket bort og fjellet krever fokus. På sikt ønsker vi også å vise oppdaterte hensynssoner, slik at kitere lettere kan planlegge rundt sårbare villreinområder og gjeldende lokale råd.",
     downloadApp: "Last ned i App Store",
+    videoEyebrow: "Videoguide",
+    videoTitle: "Se NaviKite i bruk.",
+    videoText: "En praktisk gjennomgang av hovedfunksjonene i appen.",
+    watchOnYoutube: "Se på YouTube",
     readMore: "Les mer",
     heroReadout: "25 HØYRE · 12.7 KILOMETER",
     stripVoiceTitle: "Stemme",
@@ -80,6 +84,10 @@ const translations = {
     heroLead:
       "NaviKite provides direction, distance and simple readouts when the phone is packed away and the mountain needs your focus. Over time, we also want to show updated advisory zones so kiters can plan around sensitive wild reindeer areas and current local guidance.",
     downloadApp: "Download on the App Store",
+    videoEyebrow: "Video guide",
+    videoTitle: "See NaviKite in action.",
+    videoText: "A practical walkthrough of the main features in the app.",
+    watchOnYoutube: "Watch on YouTube",
     readMore: "Read more",
     heroReadout: "25 RIGHT · 12.7 KILOMETERS",
     stripVoiceTitle: "Voice",
