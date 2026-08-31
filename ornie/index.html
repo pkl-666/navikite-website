@@ -26,27 +26,16 @@
       h2 { margin-bottom:.85rem; font-size:clamp(2.1rem,5vw,4.4rem); line-height:.94; font-weight:1000; }
       .lead,.section-copy,.feature p,.person span { color:rgba(7,19,33,.7); font-size:1.08rem; line-height:1.58; font-weight:720; }
       .lead { max-width:42rem; font-size:clamp(1.15rem,2.1vw,1.42rem); }
-      .phone { width:min(100%,23rem); margin-left:auto; border:.72rem solid #11111c; border-radius:2.35rem; overflow:hidden; background:linear-gradient(160deg,#c2fff7,#35e4d5 58%,#ffe5a0); box-shadow:0 2rem 4.5rem rgba(7,19,33,.25); }
-      .screen { min-height:39rem; padding:1.1rem; }
-      .status { display:flex; justify-content:space-between; font-size:.72rem; font-weight:950; margin:.2rem .4rem 1.1rem; }
-      .logo { display:grid; place-items:center; width:8rem; height:8rem; margin:1.4rem auto .6rem; border-radius:1.5rem; background:rgba(255,255,255,.28); }
-      .heart { position:relative; width:4.1rem; height:4.1rem; transform:rotate(-45deg); border-radius:.8rem .8rem .35rem .8rem; background:#ff5b64; box-shadow:0 .5rem 1rem rgba(7,19,33,.12); }
-      .heart:before,.heart:after { content:""; position:absolute; width:4.1rem; height:4.1rem; border-radius:50%; background:#ff5b64; }
-      .heart:before { top:-2.05rem; left:0; } .heart:after { left:2.05rem; top:0; }
-      .phone h2 { text-align:center; color:#07306c; font-size:3.1rem; }
-      .phone p { color:rgba(7,19,33,.58); font-weight:950; }
-      .phone-copy { margin:2rem 0 1rem; font-size:1.55rem; line-height:1.08; font-weight:1000; }
-      .balance-grid { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; }
-      .balance,.event,.feature,.person,.cta { border:1px solid var(--line); border-radius:.85rem; background:var(--panel); }
-      .balance { padding:.8rem; min-height:8.5rem; }
-      .balance strong { display:block; margin-bottom:.7rem; }
-      .amount { color:#34c95b; font-size:2.15rem; font-weight:1000; }
-      .event { display:flex; gap:.8rem; align-items:center; margin-top:1rem; padding:.9rem; }
-      .event-icon { display:grid; place-items:center; width:2.8rem; height:2.8rem; border-radius:.7rem; background:#11111c; color:var(--aqua); font-weight:1000; }
+      .phone { width:min(100%,23rem); margin-left:auto; border:.72rem solid #11111c; border-radius:2.35rem; overflow:hidden; background:#9af6ea; box-shadow:0 2rem 4.5rem rgba(7,19,33,.25); }
+      .phone img { display:block; width:100%; height:auto; }
       .section { padding:4.5rem 0; }
-      .grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.85rem; margin-top:1.4rem; }
+      .grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.85rem; margin-top:1.4rem; align-items:stretch; }
+      .feature,.person,.cta { border:1px solid var(--line); border-radius:.85rem; background:var(--panel); }
       .feature,.person { padding:1.1rem; }
+      .feature { display:flex; flex-direction:column; min-height:100%; overflow:hidden; }
       .icon { display:grid; place-items:center; width:2.8rem; height:2.8rem; margin-bottom:.85rem; border-radius:.7rem; background:#11111c; color:var(--aqua); font-weight:1000; }
+      .feature-shot { margin-top:auto; padding-top:.7rem; }
+      .feature-shot img { display:block; width:100%; aspect-ratio:9/16; object-fit:cover; object-position:top center; border-radius:.7rem; border:1px solid rgba(255,255,255,.72); box-shadow:0 .85rem 1.8rem rgba(7,19,33,.14); background:#9af6ea; }
       .people { display:grid; grid-template-columns:.8fr 1.2fr; gap:2rem; align-items:start; border-top:1px solid rgba(255,255,255,.55); }
       .list { display:grid; gap:.75rem; }
       .person strong,.person span { display:block; }
@@ -56,7 +45,7 @@
       .footer { display:flex; justify-content:space-between; gap:1rem; padding:2rem 0 3rem; border-top:1px solid rgba(255,255,255,.55); color:rgba(7,19,33,.66); font-weight:850; }
       .footer a { text-decoration:none; } .footer a:hover { text-decoration:underline; }
       @media (max-width:860px){ .header,.footer{align-items:flex-start;flex-direction:column}.hero,.people{min-height:auto;grid-template-columns:1fr}.phone{margin:0 auto}.grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
-      @media (max-width:560px){ .nav,.actions{width:100%;flex-direction:column;align-items:stretch}.button{width:100%}h1{font-size:4.2rem}.grid{grid-template-columns:1fr} }
+      @media (max-width:560px){ .nav,.actions{width:100%;flex-direction:column;align-items:stretch}.button{width:100%}h1{font-size:4.2rem}.grid{grid-template-columns:1fr}.feature-shot img{max-height:32rem} }
     </style>
   </head>
   <body>
@@ -72,21 +61,18 @@
           <p class="lead">Ørnie hjelper familier med å gjøre ansvar, skjermtid, innsats og månedslønn mer oversiktlig. Mindre mas, mer samarbeid og en tydeligere sammenheng mellom frihet, ansvar og penger.</p>
           <div class="actions"><a class="button primary" href="https://apps.apple.com/no/app/%C3%B8rnie/id6800534361" target="_blank" rel="noopener">Last ned i App Store</a><a class="button light" href="#slik-fungerer-det">Se hvordan det fungerer</a></div>
         </div>
-        <figure class="phone" aria-label="Forhåndsvisning av Ørnie">
-          <div class="screen">
-            <div class="status"><span>13:59</span><span>57%</span></div>
-            <div class="logo" aria-hidden="true"><div class="heart"></div></div>
-            <h2>Ørnie</h2>
-            <p class="phone-copy">Familien denne måneden</p>
-            <p>Ansvar, frihet, skjermtid og månedslønn uten regnearkfølelse.</p>
-            <div class="balance-grid"><div class="balance"><strong>Barn 1</strong><span class="amount">595</span> kr</div><div class="balance"><strong>Barn 2</strong><span class="amount">1 050</span> kr</div></div>
-            <div class="event"><span class="event-icon">+</span><div><strong>Ingen åpne hendelser ennå</strong><p>Legg inn første sak med Ny hendelse.</p></div></div>
-          </div>
+        <figure class="phone" aria-label="Skjermbilde fra Ørnies hovedside">
+          <img src="/assets/IMG_1678.png" alt="Ørnie hovedside med familieoversikt, månedslønn og åpne hendelser" width="1170" height="2532" />
         </figure>
       </section>
       <section id="slik-fungerer-det" class="section">
         <p class="eyebrow">Slik fungerer det</p><h2>Alt familien avtaler, samlet ett sted.</h2><p class="section-copy">Foreldre setter rammer, barn ser hva som teller, og oppdrag kan dokumenteres med bilde. Ørnie er laget for hverdagsøkonomi og gode avtaler om skjermtid, ikke kompliserte budsjetter.</p>
-        <div class="grid"><article class="feature"><span class="icon">1</span><h3>Regler og saldo</h3><p>Sett grunnbeløp, tillegg og trekk som blir synlige underveis i måneden.</p></article><article class="feature"><span class="icon">2</span><h3>Skjermtid</h3><p>Koble skjermtid til familiens egne avtaler, slik at frihet og ansvar blir konkret og forutsigbart.</p></article><article class="feature"><span class="icon">3</span><h3>Oppdrag og bildebevis</h3><p>Legg ut småjobber med frist, beløp og bilde. Barna kan claime, levere og dokumentere jobben.</p></article><article class="feature"><span class="icon">4</span><h3>Oppgjør og lønnslipp</h3><p>Når måneden gjøres opp får barna lønnslipp som viser hva som er opptjent, trukket og utbetalt.</p></article></div>
+        <div class="grid">
+          <article class="feature"><span class="icon">1</span><h3>Regler og saldo</h3><p>Sett grunnbeløp, tillegg og trekk som blir synlige underveis i måneden.</p><div class="feature-shot"><img src="/assets/IMG_1682.png" alt="Regler og beløp i Ørnie" width="1170" height="2532" loading="lazy" /></div></article>
+          <article class="feature"><span class="icon">2</span><h3>Skjermtid</h3><p>Koble skjermtid til familiens egne avtaler, slik at frihet og ansvar blir konkret og forutsigbart.</p><div class="feature-shot"><img src="/assets/IMG_1678.png" alt="Familieoversikt i Ørnie" width="1170" height="2532" loading="lazy" /></div></article>
+          <article class="feature"><span class="icon">3</span><h3>Oppdrag og bildebevis</h3><p>Legg ut småjobber med frist, beløp og bilde. Barna kan claime, levere og dokumentere jobben.</p><div class="feature-shot"><img src="/assets/IMG_1681.png" alt="Oppdrag med bildebevis i Ørnie" width="1170" height="2532" loading="lazy" /></div></article>
+          <article class="feature"><span class="icon">4</span><h3>Oppgjør og lønnslipp</h3><p>Når måneden gjøres opp får barna lønnslipp som viser hva som er opptjent, trukket og utbetalt.</p><div class="feature-shot"><img src="/assets/IMG_1680.png" alt="Månedsoppgjør i Ørnie" width="1170" height="2532" loading="lazy" /></div></article>
+        </div>
       </section>
       <section id="for-familien" class="section people"><div><p class="eyebrow">For hele familien</p><h2>Bygget for foreldre, tenåringer og hjelpsomme slektninger.</h2></div><div class="list"><div class="person"><strong>Foreldre</strong><span>Får oversikt over avtaler, skjermtid, frister, bildebevis, månedslønn og oppgjør.</span></div><div class="person"><strong>Tenåringer</strong><span>Ser saldo, oppdrag, skjermtid og konsekvenser tydeligere, uten at alt må tas muntlig hver gang.</span></div><div class="person"><strong>Slekt</strong><span>Kan inviteres til å legge ut egne oppdrag med direkte belønning.</span></div></div></section>
       <section class="section cta"><p class="eyebrow">Nå på App Store</p><h2>Start med familien i dag.</h2><p class="section-copy">Ørnie er gratis å laste ned for iPhone og iPad.</p><div class="actions"><a class="button primary" href="https://apps.apple.com/no/app/%C3%B8rnie/id6800534361" target="_blank" rel="noopener">Last ned i App Store</a></div></section>
