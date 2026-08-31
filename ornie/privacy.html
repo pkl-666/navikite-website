@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personvern - Ørnie</title>
+    <meta name="description" content="Personvernerklæring for Ørnie." />
+    <link rel="canonical" href="https://navikite.com/ornie/privacy.html" />
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; color: #071321; font-family: ui-rounded, "SF Pro Rounded", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 0; background: linear-gradient(140deg, #36e4d5, #15b8c9 56%, #ffe08a); }
+      header, main, footer { width: min(820px, calc(100% - 2rem)); margin: 0 auto; }
+      header, footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.2rem 0; font-weight: 950; }
+      a { color: inherit; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      article { margin: 2.5rem 0 3rem; padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.7); border-radius: 0.9rem; background: rgba(255, 255, 255, 0.7); }
+      h1 { margin: 0 0 1rem; font-size: clamp(2.6rem, 8vw, 5rem); line-height: 0.92; }
+      h2 { margin: 2rem 0 0.65rem; font-size: 1.35rem; }
+      p, li { color: rgba(7, 19, 33, 0.7); font-size: 1.04rem; line-height: 1.65; font-weight: 700; }
+      ul { padding-left: 1.2rem; }
+      .eyebrow { margin: 0 0 0.8rem; color: rgba(7, 19, 33, 0.64); text-transform: uppercase; font-size: 0.82rem; font-weight: 1000; }
+      @media (max-width: 620px) { header, footer { flex-direction: column; } article { padding: 1.25rem; } }
+    </style>
+  </head>
+  <body>
+    <header><a href="index.html">Ørnie</a><a href="https://navikite.com/">NaviKite</a></header>
+    <main>
+      <article>
+        <p class="eyebrow">Personvern</p>
+        <h1>Personvern i Ørnie</h1>
+        <p>Ørnie er laget for familier som vil ha bedre oversikt over oppdrag, regler, månedslønn og hverdagsansvar. Dataene brukes for å levere funksjonene i appen.</p>
+        <h2>Data appen kan lagre</h2>
+        <ul>
+          <li>Navn, e-post og bruker-ID for innlogging og familiekobling.</li>
+          <li>Familier, roller, barneprofiler, regler, oppdrag, frister og oppgjør.</li>
+          <li>Bilder som legges ved oppdrag eller hendelser.</li>
+          <li>Teknisk informasjon som push-token og enkle bruksdata for appfunksjoner.</li>
+        </ul>
+        <h2>Hvordan data brukes</h2>
+        <p>Data brukes til å vise riktig familieinnhold til riktige brukere, sende varsler, håndtere oppdrag og lage oversikt over månedssaldo og oppgjør.</p>
+        <h2>Deling</h2>
+        <p>Familieinnhold deles bare med brukere som er koblet til samme familie eller er invitert inn med riktig rolle. Ørnie selger ikke persondata.</p>
+        <h2>Lagring</h2>
+        <p>Appdata lagres i Supabase. Bilder kan lagres i Cloudflare R2. Tilgang styres med innlogging og familietilknytning.</p>
+        <h2>Kontakt</h2>
+        <p>Spørsmål om personvern kan sendes til <a href="mailto:earnie@navikite.com">earnie@navikite.com</a>.</p>
+      </article>
+    </main>
+    <footer><span>Ørnie</span><span>PK Lunderød · 2026</span></footer>
+  </body>
+</html>
