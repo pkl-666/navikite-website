@@ -20,12 +20,27 @@
       .button.primary { background:#11111c; color:white; box-shadow:0 .9rem 2rem rgba(7,19,33,.18); }
       .button.light { border:1px solid var(--line); background:rgba(255,255,255,.48); }
       .hero { min-height:calc(100vh - 5rem); display:grid; grid-template-columns:minmax(0,1fr) minmax(18rem,.74fr); gap:3rem; align-items:center; padding:3rem 0 4rem; }
+      .hero-copy { display:flex; flex-direction:column; align-items:center; text-align:center; }
       .eyebrow { margin:0 0 .9rem; color:rgba(7,19,33,.64); text-transform:uppercase; font-size:.82rem; font-weight:1000; }
       h1,h2,h3,p { margin-top:0; }
       h1 { max-width:10ch; margin-bottom:1.2rem; font-size:clamp(4rem,12vw,8rem); line-height:.86; font-weight:1000; }
+      .hero-lockup { display:grid; justify-items:center; margin:.4rem 0 1rem; }
+      .hero-lockup h1 { margin-bottom:0; color:#06336f; text-shadow:0 .18rem .55rem rgba(255,255,255,.18); }
+      .ornie-symbol { position:relative; width:11rem; height:8.6rem; margin-bottom:.25rem; filter:drop-shadow(0 .75rem 1.2rem rgba(7,19,33,.16)); }
+      .logo-heart { position:absolute; left:2.35rem; top:2.2rem; width:4.9rem; height:4.9rem; transform:rotate(-45deg); border-radius:.95rem .95rem .38rem .95rem; background:linear-gradient(135deg,#ff8c66 0%,#ff424e 58%,#e91f47 100%); }
+      .logo-heart:before,.logo-heart:after { content:""; position:absolute; width:4.9rem; height:4.9rem; border-radius:50%; background:inherit; }
+      .logo-heart:before { top:-2.45rem; left:0; }
+      .logo-heart:after { left:2.45rem; top:0; }
+      .logo-gloss { position:absolute; left:2.75rem; top:1.55rem; width:2.2rem; height:.75rem; border-radius:999px; background:rgba(255,255,255,.45); transform:rotate(-26deg); z-index:2; }
+      .logo-swoosh { position:absolute; left:1.75rem; top:4.15rem; width:7.2rem; height:2.4rem; border-bottom:.82rem solid #0ccfc7; border-left:.82rem solid #0ccfc7; border-radius:0 0 0 4rem; transform:rotate(-21deg); z-index:3; }
+      .logo-arrow { position:absolute; right:1.45rem; top:2.35rem; width:2.45rem; height:2.45rem; border-top:.9rem solid #0ccfc7; border-right:.9rem solid #0ccfc7; border-radius:.25rem; transform:rotate(21deg); z-index:4; }
+      .logo-spark { position:absolute; right:2.55rem; top:.8rem; width:1.05rem; height:1.05rem; background:#ffc21f; transform:rotate(45deg); border-radius:.2rem; z-index:5; }
+      .logo-spark:before,.logo-spark:after { content:""; position:absolute; inset:-.28rem .38rem; background:#ffc21f; border-radius:999px; }
+      .logo-spark:after { inset:.38rem -.28rem; }
       h2 { margin-bottom:.85rem; font-size:clamp(2.1rem,5vw,4.4rem); line-height:.94; font-weight:1000; }
       .lead,.section-copy,.feature p,.person span { color:rgba(7,19,33,.7); font-size:1.08rem; line-height:1.58; font-weight:720; }
       .lead { max-width:42rem; font-size:clamp(1.15rem,2.1vw,1.42rem); }
+      .hero-copy .actions { justify-content:center; flex-wrap:wrap; }
       .phone { width:min(100%,23rem); margin-left:auto; border:.72rem solid #11111c; border-radius:2.35rem; overflow:hidden; background:#9af6ea; box-shadow:0 2rem 4.5rem rgba(7,19,33,.25); }
       .phone img { display:block; width:100%; height:auto; }
       .section { padding:4.5rem 0; }
@@ -45,7 +60,7 @@
       .footer { display:flex; justify-content:space-between; gap:1rem; padding:2rem 0 3rem; border-top:1px solid rgba(255,255,255,.55); color:rgba(7,19,33,.66); font-weight:850; }
       .footer a { text-decoration:none; } .footer a:hover { text-decoration:underline; }
       @media (max-width:860px){ .header,.footer{align-items:flex-start;flex-direction:column}.hero,.people{min-height:auto;grid-template-columns:1fr}.phone{margin:0 auto}.grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
-      @media (max-width:560px){ .nav,.actions{width:100%;flex-direction:column;align-items:stretch}.button{width:100%}h1{font-size:4.2rem}.grid{grid-template-columns:1fr}.feature-shot img{max-height:32rem} }
+      @media (max-width:560px){ .nav,.actions{width:100%;flex-direction:column;align-items:stretch}.button{width:100%}h1{font-size:4.2rem}.ornie-symbol{width:8.6rem;height:6.8rem}.grid{grid-template-columns:1fr}.feature-shot img{max-height:32rem} }
     </style>
   </head>
   <body>
@@ -55,9 +70,12 @@
     </header>
     <main>
       <section class="hero">
-        <div>
+        <div class="hero-copy">
           <p class="eyebrow">Økonomistyring for tenåringsfamilier</p>
-          <h1>Ørnie</h1>
+          <div class="hero-lockup" aria-label="Ørnie">
+            <div class="ornie-symbol" aria-hidden="true"><span class="logo-heart"></span><span class="logo-gloss"></span><span class="logo-swoosh"></span><span class="logo-arrow"></span><span class="logo-spark"></span></div>
+            <h1>Ørnie</h1>
+          </div>
           <p class="lead">Ørnie hjelper familier med å gjøre ansvar, skjermtid, innsats og månedslønn mer oversiktlig. Mindre mas, mer samarbeid og en tydeligere sammenheng mellom frihet, ansvar og penger.</p>
           <div class="actions"><a class="button primary" href="https://apps.apple.com/no/app/%C3%B8rnie/id6800534361" target="_blank" rel="noopener">Last ned i App Store</a><a class="button light" href="#slik-fungerer-det">Se hvordan det fungerer</a></div>
         </div>
