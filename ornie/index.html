@@ -13,13 +13,11 @@
     <style>
       :root {
         --ink: #071321;
-        --muted: #586675;
         --panel: rgba(255, 255, 255, 0.68);
         --line: rgba(255, 255, 255, 0.7);
         --aqua: #36e4d5;
         --teal: #15b8c9;
         --sun: #ffe08a;
-        --coral: #ff5b64;
         --max: 1120px;
       }
       * { box-sizing: border-box; }
@@ -46,21 +44,9 @@
       h2 { margin-bottom: 0.85rem; font-size: clamp(2.1rem, 5vw, 4.4rem); line-height: 0.94; font-weight: 1000; }
       .lead, .section-copy, .feature p, .person span { color: rgba(7, 19, 33, 0.7); font-size: 1.08rem; line-height: 1.58; font-weight: 720; }
       .lead { max-width: 42rem; font-size: clamp(1.15rem, 2.1vw, 1.42rem); }
-      .phone { width: min(100%, 23rem); margin-left: auto; border: 0.72rem solid #11111c; border-radius: 2.35rem; overflow: hidden; background: linear-gradient(160deg, #c2fff7, #35e4d5 58%, #ffe5a0); box-shadow: 0 2rem 4.5rem rgba(7, 19, 33, 0.25); }
-      .screen { min-height: 39rem; padding: 1.25rem; }
-      .notch { width: 6.4rem; height: 1.35rem; margin: 0 auto 1.2rem; border-radius: 999px; background: #11111c; }
-      .logo { display: grid; place-items: center; width: 7rem; height: 7rem; margin: 1rem auto; border-radius: 1.8rem; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.55); }
-      .heart { position: relative; width: 4.1rem; height: 4.1rem; transform: rotate(-45deg); border-radius: 0.8rem 0.8rem 0.35rem 0.8rem; background: var(--coral); }
-      .heart::before, .heart::after { content: ""; position: absolute; width: 4.1rem; height: 4.1rem; border-radius: 50%; background: var(--coral); }
-      .heart::before { top: -2.05rem; left: 0; }
-      .heart::after { left: 2.05rem; top: 0; }
-      .phone h2 { text-align: center; color: #07306c; font-size: 3.2rem; }
-      .phone p { text-align: center; color: rgba(7, 19, 33, 0.58); font-weight: 950; }
-      .mini-card, .feature, .person, .cta { border: 1px solid var(--line); border-radius: 0.85rem; background: var(--panel); }
-      .mini-card { display: flex; justify-content: space-between; gap: 1rem; margin-top: 0.85rem; padding: 1rem; }
-      .mini-card strong, .mini-card span { display: block; }
-      .mini-card span { margin-top: 0.25rem; color: rgba(7, 19, 33, 0.58); font-weight: 850; }
-      .pill { align-self: center; padding: 0.42rem 0.7rem; border-radius: 999px; background: #11111c; color: white; font-weight: 1000; white-space: nowrap; }
+      .phone { width: min(100%, 23rem); margin-left: auto; border: 0.72rem solid #11111c; border-radius: 2.35rem; overflow: hidden; background: #11111c; box-shadow: 0 2rem 4.5rem rgba(7, 19, 33, 0.25); }
+      .phone img { display: block; width: 100%; height: auto; }
+      .feature, .person, .cta { border: 1px solid var(--line); border-radius: 0.85rem; background: var(--panel); }
       .section { padding: 4.5rem 0; }
       .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.85rem; margin-top: 1.4rem; }
       .feature { padding: 1.1rem; }
@@ -113,17 +99,9 @@
             <a class="button light" href="#slik-fungerer-det">Se hvordan det fungerer</a>
           </div>
         </div>
-        <div class="phone" aria-label="Forhåndsvisning av Ørnie">
-          <div class="screen">
-            <div class="notch" aria-hidden="true"></div>
-            <div class="logo" aria-hidden="true"><div class="heart"></div></div>
-            <h2>Ørnie</h2>
-            <p>Yt & Nyt</p>
-            <div class="mini-card"><div><strong>Månedssaldo</strong><span>Nora er i rute</span></div><span class="pill">+120 kr</span></div>
-            <div class="mini-card"><div><strong>Klippe plenen</strong><span>Frist fredag 18:00</span></div><span class="pill">200 kr</span></div>
-            <div class="mini-card"><div><strong>Bildebevis levert</strong><span>Venter på godkjenning</span></div><span class="pill">OK?</span></div>
-          </div>
-        </div>
+        <figure class="phone" aria-label="Skjermbilde fra Ørnie">
+          <img src="../assets/ornie-home.jpg" width="288" height="640" alt="Skjermbilde av Ørnie med månedssaldo, åpne hendelser og familiefane" />
+        </figure>
       </section>
       <section id="slik-fungerer-det" class="section">
         <p class="eyebrow">Slik fungerer det</p>
