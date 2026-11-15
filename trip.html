@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Trip Notice | NaviKite</title>
+  <link rel="icon" href="assets/navikite-icon.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="trip.css">
+</head>
+<body class="trip-page">
+  <header class="trip-header">
+    <a class="brand" href="/">
+      <img src="assets/navikite-icon.png" alt="">
+      <span>NaviKite</span>
+    </a>
+    <span class="trip-header-label">Shared Trip Notice</span>
+  </header>
+
+  <main class="trip-shell">
+    <section id="loading" class="trip-message" aria-live="polite">
+      <span class="trip-spinner"></span>
+      Loading shared trip...
+    </section>
+
+    <section id="error" class="trip-message" hidden>
+      <strong>This link is unavailable</strong>
+      <p>It may have expired, been stopped, or been entered incorrectly.</p>
+    </section>
+
+    <div id="trip-content" hidden>
+      <section class="trip-summary">
+        <div>
+          <p class="trip-eyebrow" id="trip-area"></p>
+          <h1 id="trip-route"></h1>
+          <p class="trip-person" id="trip-person"></p>
+        </div>
+        <span id="trip-status" class="trip-status"></span>
+      </section>
+
+      <dl class="trip-facts">
+        <div><dt>Begins</dt><dd id="trip-start"></dd></div>
+        <div><dt>Finished by</dt><dd id="trip-finish"></dd></div>
+        <div><dt>Party</dt><dd id="trip-party"></dd></div>
+        <div><dt>Last position</dt><dd id="trip-updated"></dd></div>
+      </dl>
+
+      <p id="trip-note" class="trip-note" hidden></p>
+
+      <section class="trip-map-wrap">
+        <div id="trip-map" aria-label="Map showing the last shared position"></div>
+        <div id="no-position" class="trip-map-empty" hidden>
+          <strong>No live position available</strong>
+          <span>The kiter may be outside coverage or may not have started live sharing.</span>
+        </div>
+        <span class="trip-map-credit">© Kartverket</span>
+      </section>
+
+      <aside class="trip-safety">
+        <strong>Not an emergency tracking service</strong>
+        <p>Positions can be delayed when mobile coverage is poor. Use the agreed safety plan and contact emergency services when necessary.</p>
+      </aside>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="trip.js"></script>
+</body>
+</html>
