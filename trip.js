@@ -3,6 +3,7 @@ const SUPABASE_KEY = "sb_publishable_H0Ks40760ur08qWxvG-DOw_oMgXDuVa";
 const token = new URLSearchParams(location.search).get("token");
 let map;
 let marker;
+let latestTrip;
 
 const el = (id) => document.getElementById(id);
 const dateTime = (value) => value ? new Intl.DateTimeFormat(undefined, {
@@ -31,6 +32,7 @@ async function fetchTrip() {
 }
 
 function showTrip(trip) {
+  latestTrip = trip;
   el("loading").hidden = true;
   el("error").hidden = true;
   el("trip-content").hidden = false;
@@ -42,7 +44,7 @@ function showTrip(trip) {
   el("trip-start").textContent = dateTime(trip.starts_at);
   el("trip-finish").textContent = dateTime(trip.expected_at);
   el("trip-party").textContent = trip.party_size;
-  el("trip-updated").textContent = relativeTime(trip.location_updated_at);
+  updatePositionAge();
   el("trip-note").textContent = trip.note || "";
   el("trip-note").hidden = !trip.note;
   updateMap(trip);
@@ -66,6 +68,20 @@ function updateMap(trip) {
   }
 }
 
+function updatePositionAge() {
+  const value = latestTrip?.location_updated_at;
+  const age = value ? Math.max(0, (Date.now() - new Date(value).getTime()) / 1000) : Infinity;
+  const state = age >= 600 ? "stale" : age >= 120 ? "delayed" : "fresh";
+  const text = relativeTime(value);
+  el("trip-updated").textContent = text;
+  const badge = el("trip-map-age");
+  badge.hidden = !value;
+  badge.textContent = `Position updated ${text}`;
+  badge.className = `trip-map-age ${state}`;
+  const markerElement = marker?.getElement()?.querySelector(".trip-marker");
+  if (markerElement) markerElement.className = `trip-marker ${state}`;
+}
+
 async function refresh() {
   try { showTrip(await fetchTrip()); }
   catch (_) {
@@ -77,3 +93,4 @@ async function refresh() {
 
 refresh();
 setInterval(refresh, 20000);
+setInterval(updatePositionAge, 1000);
