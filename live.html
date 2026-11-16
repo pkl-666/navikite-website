@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#05080b">
+  <title>Live position | NaviKite</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="live.css">
+</head>
+<body class="live-page">
+  <header class="live-header">
+    <a href="/" aria-label="NaviKite home">NaviKite</a>
+    <span>Shared live position</span>
+  </header>
+  <main class="live-shell">
+    <div id="loading" class="live-message"><span class="live-spinner"></span><strong>Loading position</strong></div>
+    <div id="error" class="live-message" hidden><strong>This tracking link is unavailable</strong><span>It may have expired or been replaced.</span></div>
+    <div id="live-content" hidden>
+      <section class="live-summary">
+        <div><p class="live-eyebrow">NaviKite Live Map</p><h1 id="live-person"></h1></div>
+        <span id="live-age" class="live-age"></span>
+      </section>
+      <section class="live-map-wrap">
+        <div id="live-map" aria-label="Map showing the last shared position"></div>
+        <span id="live-map-age" class="live-map-age"></span>
+        <span class="live-map-credit">© Kartverket</span>
+      </section>
+      <aside class="live-safety">
+        <strong>Not an emergency tracking service</strong>
+        <p>Positions can be delayed when mobile coverage is poor. Always check the update age and use the agreed safety plan.</p>
+      </aside>
+    </div>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="live.js"></script>
+</body>
+</html>

@@ -9,6 +9,10 @@
           {
             "/": "/trip.html",
             "comment": "Open shared NaviKite Trip Notices"
+          },
+          {
+            "/": "/live.html",
+            "comment": "Open shared NaviKite live positions"
           }
         ]
       }
