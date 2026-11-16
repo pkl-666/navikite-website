@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#05080b">
+  <title>Shared route | NaviKite</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="route.css">
+</head>
+<body class="route-page">
+  <header class="route-header"><a href="/">NaviKite</a><span>Shared route</span></header>
+  <main class="route-shell">
+    <div id="loading" class="route-message"><span class="route-spinner"></span><strong>Loading route</strong></div>
+    <div id="error" class="route-message" hidden><strong>This route is unavailable</strong><span>It may have expired.</span></div>
+    <div id="route-content" hidden>
+      <section class="route-summary">
+        <p>Shared NaviKite route</p>
+        <h1 id="route-name"></h1>
+        <span id="route-stats"></span>
+      </section>
+      <section class="route-map-wrap"><div id="route-map"></div><span class="route-credit">© Kartverket</span></section>
+      <ol id="route-points" class="route-points"></ol>
+      <p class="route-hint">Open this link on an iPhone with NaviKite installed to preview, save or start the route.</p>
+    </div>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="route.js"></script>
+</body>
+</html>
