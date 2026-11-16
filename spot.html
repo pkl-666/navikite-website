@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#05080b">
+  <title>Shared position | NaviKite</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="route.css">
+</head>
+<body class="route-page">
+  <header class="route-header"><a href="/">NaviKite</a><span>Shared position</span></header>
+  <main class="route-shell">
+    <div id="loading" class="route-message"><span class="route-spinner"></span><strong>Loading position</strong></div>
+    <div id="error" class="route-message" hidden><strong>This position is unavailable</strong><span>It may have expired.</span></div>
+    <div id="spot-content" hidden>
+      <section class="route-summary">
+        <p>Shared NaviKite position</p>
+        <h1 id="spot-name"></h1>
+        <span id="spot-coordinates"></span>
+      </section>
+      <section class="route-map-wrap"><div id="route-map"></div><span class="route-credit">© Kartverket</span></section>
+      <p class="route-hint">Open this link on an iPhone with NaviKite installed to navigate to or save the position.</p>
+    </div>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="spot.js"></script>
+</body>
+</html>

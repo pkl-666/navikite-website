@@ -17,6 +17,10 @@
           {
             "/": "/route.html",
             "comment": "Open shared NaviKite routes"
+          },
+          {
+            "/": "/spot.html",
+            "comment": "Open shared NaviKite positions"
           }
         ]
       }
