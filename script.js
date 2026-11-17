@@ -14,7 +14,8 @@ const translations = {
     videoEyebrow: "Videoguide",
     videoTitle: "Se NaviKite i bruk.",
     videoText: "En praktisk gjennomgang av hovedfunksjonene i appen.",
-    watchOnYoutube: "Se på YouTube",
+    videoComingSoon: "Oppdatert video kommer snart",
+    videoUnavailableLabel: "Videoguide midlertidig utilgjengelig",
     readMore: "Les mer",
     heroReadout: "25 HØYRE · 12.7 KILOMETER",
     stripVoiceTitle: "Stemme",
@@ -102,7 +103,8 @@ const translations = {
     videoEyebrow: "Video guide",
     videoTitle: "See NaviKite in action.",
     videoText: "A practical walkthrough of the main features in the app.",
-    watchOnYoutube: "Watch on YouTube",
+    videoComingSoon: "Updated video coming soon",
+    videoUnavailableLabel: "Video guide temporarily unavailable",
     readMore: "Read more",
     heroReadout: "25 RIGHT · 12.7 KILOMETERS",
     stripVoiceTitle: "Voice",
@@ -189,6 +191,12 @@ function applyLanguage(language) {
     const key = node.dataset.i18n;
     const value = translations[language][key];
     if (value) node.textContent = value;
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
+    const key = node.dataset.i18nAriaLabel;
+    const value = translations[language][key];
+    if (value) node.setAttribute("aria-label", value);
   });
 
   document.querySelectorAll("[data-language-content]").forEach((node) => {
