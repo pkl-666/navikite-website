@@ -30,7 +30,7 @@ const translations = {
     whyP1:
       "På snøkite-tur er telefonen ofte i lomme eller armbånd, hendene er kalde, og det er ikke alltid man vil stoppe for å sjekke skjermen. NaviKite er laget for å gi korte, nyttige oppdateringer mens du holder flyten.",
     whyP2:
-      "Appen fokuserer på situasjonsforståelse: retning, avstand, base, ruter, Apple Watch og en enkel planleggingsflate for vind og turforslag.",
+      "Appen fokuserer på situasjonsforståelse: retning, avstand, base, ruter, Apple Watch, Garmin og en enkel planleggingsflate for vind og turforslag.",
     whyP3:
       "NaviKite er et navigasjonshjelpemiddel, ikke en erstatning for kart, kompass, værvurdering og vanlig fjellvett.",
     statusEyebrow: "Status",
@@ -42,7 +42,7 @@ const translations = {
     appStoreEyebrow: "App Store",
     appStoreTitle: "NaviKite er tilgjengelig i App Store.",
     betaText:
-      "Last ned appen på iPhone og bruk den sammen med Apple Watch når du vil ha navigasjonsstøtte på håndleddet.",
+      "Last ned appen på iPhone og bruk den sammen med Apple Watch eller en kompatibel Garmin-klokke når du vil ha navigasjonsstøtte på håndleddet.",
     footerText: "NaviKite av PK Lunderød · 2026",
     privacyLink: "Personvern",
     privacyEyebrow: "Personvern",
@@ -119,7 +119,7 @@ const translations = {
     whyP1:
       "On a snowkite trip, the phone is often in a pocket or armband, hands are cold, and stopping to check the screen is not always what you want. NaviKite is built to give short, useful readouts while you keep moving.",
     whyP2:
-      "The app focuses on situational awareness: direction, distance, base, routes, Apple Watch and a simple planning surface for wind and trip ideas.",
+      "The app focuses on situational awareness: direction, distance, base, routes, Apple Watch, Garmin and a simple planning surface for wind and trip ideas.",
     whyP3:
       "NaviKite is a navigation aid, not a replacement for maps, compass, weather judgement and sound mountain sense.",
     statusEyebrow: "Status",
@@ -131,7 +131,7 @@ const translations = {
     appStoreEyebrow: "App Store",
     appStoreTitle: "NaviKite is available on the App Store.",
     betaText:
-      "Download the app on iPhone and use it with Apple Watch when you want navigation support on your wrist.",
+      "Download the app on iPhone and use it with Apple Watch or a compatible Garmin watch when you want navigation support on your wrist.",
     footerText: "NaviKite by PK Lunderød · 2026",
     privacyLink: "Privacy",
     privacyEyebrow: "Privacy",
