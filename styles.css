@@ -484,7 +484,7 @@ h3 {
   isolation: isolate;
   background:
     linear-gradient(rgba(4, 13, 17, 0.84), rgba(4, 13, 17, 0.96)),
-    url("assets/home-map-preview.png") center / cover;
+    url("assets/home-map-preview-finse.png") center / cover;
 }
 
 .video-placeholder {
